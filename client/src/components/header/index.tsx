@@ -4,7 +4,7 @@ import { Container } from "../../box/absoluteBox";
 import { ButtonSecondary, HeaderSection, LogoTitle, LogoSubtitle,  HeaderWrapper, Button, FlipInX } from "./header";
 import {Link} from 'react-router-dom'
 
-const Header:React.FC = () => {
+const Header = (): JSX.Element => {
     return (
         <HeaderSection>
             <Container>
