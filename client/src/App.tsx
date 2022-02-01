@@ -1,10 +1,12 @@
-import React from 'react';
+import GlobalStyles from './box/global'
+import Header from './components/header'
 
-function App() {
+const App:React.FC = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+      <GlobalStyles />
+      <Header />
+    </>
   );
 }
 
