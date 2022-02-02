@@ -11,16 +11,16 @@ export const ListItem = styled.li`
 `
 
 export const PageLink = styled(Link)`
-    font-size: 16px;
+    font-size: ${({theme}) => theme.fontSize.medium};
     font-weight: 600;
-    color: #FFFFFF;
+    color: ${({theme}) => theme.colors.primary};
     text-transform: uppercase;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     display: inline-block;
 
     :hover {
-        color: #b49383; 
+        color: ${({theme}) => theme.colors.secondary}; 
         animation: 3s ${keyframes`${pulse}`} infinite;
     }
 `

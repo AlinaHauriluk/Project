@@ -1,7 +1,7 @@
 import React from "react";
 import { List, ListItem, PageLink} from "./nav";
 
-const Nav = (): JSX.Element => {
+const Nav = () => {
    return (
       <List>
          <ListItem>

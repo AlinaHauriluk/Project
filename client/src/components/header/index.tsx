@@ -2,9 +2,8 @@ import React from "react";
 import Nav from "../nav";
 import { Container } from "../../box/absoluteBox";
 import { ButtonSecondary, HeaderSection, LogoTitle, LogoSubtitle,  HeaderWrapper, Button, FlipInX } from "./header";
-import {Link} from 'react-router-dom'
 
-const Header = (): JSX.Element => {
+const Header = () => {
     return (
         <HeaderSection>
             <Container>
@@ -17,9 +16,10 @@ const Header = (): JSX.Element => {
                     <Nav /> 
 
                     <div>
-                        <Button as={Link} to="/">Log In</Button>
-                        <ButtonSecondary as={Link} to="/">Sign Up</ButtonSecondary>
+                        <Button>Log In</Button>
+                        <ButtonSecondary>Sign Up</ButtonSecondary>
                     </div>
+
                 </HeaderWrapper>
             </Container>
         </HeaderSection>

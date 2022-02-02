@@ -3,7 +3,7 @@ import { Wrapper } from "../../box/flexBox";
 import {flipInX, swing} from 'react-animations'
 
 export const HeaderSection = styled.header`
-    background-color: rgba(0,0,0,0.65);
+    background-color: ${({theme}) => theme.colors.background};
     width: 100%;
 	height: 70px;
     position: fixed;
@@ -15,33 +15,32 @@ export const HeaderWrapper = styled(Wrapper)`
 `
 
 export const LogoTitle = styled.div`
-    font-size: 30px;
+    font-size: ${({theme}) => theme.fontSize.large};
     line-height: 0.75;
-    color: #FFFFFF;
+    color: ${({theme}) => theme.colors.primary};
 `
 export const LogoSubtitle = styled.div`
-    font-size: 12px;
+    font-size: ${({theme}) => theme.fontSize.small};
     text-transform: uppercase;
-    color: #FFFFFF;
-    letter-spacing: 0.680em;
+    color: ${({theme}) => theme.colors.primary};
+    letter-spacing: 8px;
     line-height: 0.75;
     margin-top: 12px;
     padding-left: 5px;
 `
 
 export const Button = styled.button`
-    color: #FFFFFF;
+    color: ${({theme}) => theme.colors.primary};
     padding: 10px 15px;
     border-radius: 5px;
-    border: 2px solid #b49383;
-    background-color: transparent;
+    border: 2px solid ${({theme}) => theme.colors.secondary};
+    background-color: ${({theme}) => theme.colors.transparent};
     line-height: 0.65;
-    font-size: 16px;
-    text-decoration: none;
+    font-size: ${({theme}) => theme.fontSize.medium};
     display: inline-block;
 
     :hover {
-        background-color: #b49383; 
+        background-color: ${({theme}) => theme.colors.secondary}; 
         animation: 5s ${keyframes`${swing}`} infinite;
     }
 `
