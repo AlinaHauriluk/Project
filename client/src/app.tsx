@@ -1,17 +1,10 @@
-import GlobalStyles from './box/global'
-import Header from './components/header'
-import {BrowserRouter} from 'react-router-dom'
-import { ThemeProvider } from 'styled-components'
-import { baseTheme } from './theme/theme'
+import React from 'react';
 
-const App = () => {
+function App() {
   return (
-    <ThemeProvider theme={baseTheme}>
-      <BrowserRouter>
-        <GlobalStyles />
-        <Header />
-      </BrowserRouter>
-    </ThemeProvider>
+    <div>
+      
+    </div>
   );
 }
 
