@@ -1,3 +1,4 @@
+import React from 'react';
 import GlobalStyles from './box/global'
 import Header from './components/header'
 import {BrowserRouter} from 'react-router-dom'
