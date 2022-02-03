@@ -13,7 +13,6 @@ export const HeaderSection = styled.header`
 export const HeaderWrapper = styled(Wrapper)`
     justify-content: space-between;
 `
-
 export const LogoTitle = styled.div`
     font-size: ${({theme}) => theme.fontSize.large};
     line-height: 0.75;
@@ -28,7 +27,6 @@ export const LogoSubtitle = styled.div`
     margin-top: 12px;
     padding-left: 5px;
 `
-
 export const Button = styled.button`
     color: ${({theme}) => theme.colors.primary};
     padding: 10px 15px;
