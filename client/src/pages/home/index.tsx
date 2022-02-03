@@ -1,11 +1,10 @@
 import React from 'react'
 import Promo from '../../components/promo'
-import home_promo from '../../assets/home_promo.jpg'
 
 const Home = () => {
     return (
         <Promo
-        background= {`${home_promo}`}
+        background= {require('../../assets/homePromoImage.jpg')}
         height='580'
         particle='is' 
         title='An Extraordinery Experience' 

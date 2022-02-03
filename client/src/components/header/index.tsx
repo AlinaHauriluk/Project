@@ -1,13 +1,13 @@
 import React from "react";
 import Nav from "../nav";
 import { Container } from "../../box/absoluteBox";
-import { ButtonSecondary, HeaderSection, LogoTitle, LogoSubtitle,  HeaderWrapper, Button, FlipInX } from "./header";
+import { ButtonSecondary, HeaderSection, LogoTitle, LogoSubtitle,  HeaderFlex, Button, FlipInX } from "./header";
 
 const Header = () => {
     return (
         <HeaderSection>
             <Container>
-                <HeaderWrapper>
+                <HeaderFlex>
                     <FlipInX>
                         <LogoTitle>The Venue</LogoTitle>
                         <LogoSubtitle>restaurant</LogoSubtitle>
@@ -20,7 +20,7 @@ const Header = () => {
                         <ButtonSecondary>Sign Up</ButtonSecondary>
                     </div>
 
-                </HeaderWrapper>
+                </HeaderFlex>
             </Container>
         </HeaderSection>
     )     

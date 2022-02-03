@@ -1,26 +1,26 @@
 import React from 'react'
 import { PromoSection, SubTitlePromo, Paragraph, TitlePromo } from './promo'
 import { Container } from '../../box/absoluteBox'
-import {WrapperColumn} from '../../box/flexBox'
+import {FlexColumn} from '../../box/flexBox'
 
-interface Props{
+interface PromoProps{
     title: string;
-    description: string;
+    description?: string;
     particle: string;
     height: string;
     background: string;
 }
 
-const Promo = ({title, description, particle, height, background}:Props) => {
+const Promo: React.FC<PromoProps> = ({title, description, particle, height, background}) => {
    
     return (
-        <PromoSection ht={`${height}`+ 'px'} bphone={`${background}`}>
+        <PromoSection ht={`${height}`+ 'px'} bphone={background}>
             <Container>
-                <WrapperColumn>
+                <FlexColumn>
                     <SubTitlePromo>The Venue {particle}</SubTitlePromo>
                     <TitlePromo>{title}</TitlePromo>
-                    {{description}&&<Paragraph>{description}</Paragraph>}
-                </WrapperColumn>  
+                    {description && <Paragraph>{description}</Paragraph>}
+                </FlexColumn>  
             </Container>
         </PromoSection>
     )
