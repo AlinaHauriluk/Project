@@ -4,25 +4,25 @@ import { Container } from "../../box/absoluteBox";
 import { ButtonSecondary, HeaderSection, LogoTitle, LogoSubtitle,  HeaderFlex, Button, FlipInX } from "./header";
 
 const Header = () => {
-    return (
-        <HeaderSection>
-            <Container>
-                <HeaderFlex>
-                    <FlipInX>
-                        <LogoTitle>The Venue</LogoTitle>
-                        <LogoSubtitle>restaurant</LogoSubtitle>
-                    </FlipInX>
+  return (
+    <HeaderSection>
+      <Container>
+        <HeaderFlex>
+          <FlipInX>
+            <LogoTitle>The Venue</LogoTitle>
+            <LogoSubtitle>restaurant</LogoSubtitle>
+           </FlipInX>
+           
+           <Nav /> 
 
-                    <Nav /> 
+            <div>
+              <Button>Log In</Button>
+              <ButtonSecondary>Sign Up</ButtonSecondary>
+            </div>
 
-                    <div>
-                        <Button>Log In</Button>
-                        <ButtonSecondary>Sign Up</ButtonSecondary>
-                    </div>
-
-                </HeaderFlex>
-            </Container>
-        </HeaderSection>
+        </HeaderFlex>
+      </Container>
+    </HeaderSection>
     )     
 }
 
