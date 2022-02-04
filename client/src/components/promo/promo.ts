@@ -21,4 +21,5 @@ export const SubTitlePromo = styled(SubTitle)`
     font-weight: bold;
     line-height: 0.75;
     margin-bottom: 45px;
+    font-size: ${({theme}) => theme.fontSize.title};
 `
