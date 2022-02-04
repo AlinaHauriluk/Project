@@ -4,6 +4,7 @@ import Header from './components/header'
 import {BrowserRouter} from 'react-router-dom'
 import { ThemeProvider } from 'styled-components'
 import { baseTheme } from './theme/theme'
+import Home from './pages/home';
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <BrowserRouter>
         <GlobalStyles />
         <Header />
+        <Home />
       </BrowserRouter>
     </ThemeProvider>
   );

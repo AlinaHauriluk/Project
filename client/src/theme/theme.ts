@@ -7,8 +7,15 @@ export const baseTheme = {
     },
 
     fontSize: {
+        title: '48px',
+        subtitle: '38px',
         large: '30px',
         medium: '16px',
         small: '12px'
+    },
+
+    fontFamily: {
+        promo: '"Poppins", sans-serif',
+        cursiv: '"Sedgwick Ave", cursive'
     }
 }
