@@ -1,6 +1,7 @@
 import React, {useEffect} from "react";
 import { FlexContainer, Flex} from "../../box/flexBox";
-import { SectionNewExperience, NewExperienceImage, NewExperienceImageTwo, NewExperienceDescription, NewExperienceSubTitle, NewExperienceTitle, NewExperienceText } from "./newExperience";
+import { SectionNewExperience, NewExperienceImage, NewExperienceImageTwo, NewExperienceDescription, NewExperienceText, NewExperienceIcon } from "./newExperience";
+import { BlockSubTitle, BlockTitle } from "../../text/text";
 import AOS from 'aos'
 import "aos/dist/aos.css";
 
@@ -19,9 +20,10 @@ const NewExperience = () => {
         </Flex>
 
         <NewExperienceDescription  data-aos="fade-left">
-          <NewExperienceSubTitle>Something new</NewExperienceSubTitle>
-		  <NewExperienceTitle>An Extraordinery Experience</NewExperienceTitle>
-		  <NewExperienceText>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Ut non justo eleifend, facilisis nibh ut, interdum odio. Suspendisse potenti. Vivamus luctus diam eu neque rutrum, vitae aliquet dolor venenatis. Nulla consequat fringilla massa.</NewExperienceText>
+          <BlockSubTitle>Something new</BlockSubTitle>
+		      <BlockTitle>An Extraordinery Experience</BlockTitle>
+          <NewExperienceIcon />
+		      <NewExperienceText>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Ut non justo eleifend, facilisis nibh ut, interdum odio. Suspendisse potenti. Vivamus luctus diam eu neque rutrum, vitae aliquet dolor venenatis. Nulla consequat fringilla massa.</NewExperienceText>
           </NewExperienceDescription> 
       </FlexContainer>
     </SectionNewExperience>

@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { SectionContainer, BlockDescription } from "../../box/absoluteBox";
-import { SubTitle } from "../../text/text";
 
 export const SectionNewExperience = styled(SectionContainer)`
   background-color: ${({theme}) => theme.colors.backgroundSection};
@@ -24,23 +23,23 @@ export const NewExperienceDescription = styled(BlockDescription)`
   margin-bottom: -80px;
 `
 
-export const NewExperienceSubTitle = styled(SubTitle)`
-  font-size: ${({theme}) => theme.fontSize.mediumLarge};
-  margin-bottom: 10px;
-  letter-spacing: 1.8px;
-`
-
-export const NewExperienceTitle = styled.h3`
-  font-size: ${({theme}) => theme.fontSize.mediumLarge};
-  line-height: 0.75;
-  margin-bottom: 20px;
-  font-weight: 400;
-`
 export const NewExperienceText = styled.p`
   font-size: ${({theme}) => theme.fontSize.mediumSmall};
   font-weight: 600;
   letter-spacing: 0.8px;
   color: ${({theme}) => theme.colors.colorText}
+`
+
+export const NewExperienceIcon = styled.div`
+float: left;
+  shape-outside: circle();
+  clip-path: circle();
+  width: 80px;
+  height: 80px;
+  background-image: url(${require('../../assets/homeNewExperienceIcon.png')});
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 10px;
 `
 
 
