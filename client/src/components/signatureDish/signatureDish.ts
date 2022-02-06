@@ -51,7 +51,6 @@ export const SignatureDishOrder = styled.button`
 export const SignatureDishStar = styled(Star)`
   display: inline-block;
   margin-bottom: 10px;
-  background-color: ${({theme}) => theme.fontSize.medium};
 
   ::before{
     content: '\u2605';

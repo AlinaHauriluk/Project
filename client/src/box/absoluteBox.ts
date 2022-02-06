@@ -15,8 +15,6 @@ export const BlockDescription = styled.div`
   background-color: ${({theme}) => theme.colors.primary};
 `
 export const Star = styled.span`
-  background-color: ${({theme}) => theme.fontSize.medium};
-
   ::before{
     content: '\u2605';
     color: ${({theme}) => theme.colors.secondary};
