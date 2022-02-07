@@ -12,9 +12,15 @@ export const FlexColumn = styled.div`
   justify-content: center;
   height: 100%;
 `
-
-export const FlexContainer = styled(Container)`
+export const FlexSpaceBetween = styled(Flex)`
+  justify-content: space-between; 
+`
+export const FlexContainerSpace = styled(Container)`
   display: flex;
   align-items: center;
   justify-content: space-between;
+`
+export const FlexContainer = styled(Container)`
+  display: flex;
+  align-items: center;
 `
