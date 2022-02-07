@@ -27,7 +27,6 @@ export const FlexContainer = styled(Container)`
 export const FlexCenter = styled(Flex)`
   justify-content: center; 
 `
-
 export const FlexJustifyCenter = styled.div`
   display: flex;
   justify-content: center; 
