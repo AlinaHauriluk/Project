@@ -6,7 +6,8 @@ export const baseTheme = {
       backgroundSection: '#f7fafb',
       transparent: 'transparent',
       colorText: '#636363',
-      backgroundSectionTwo: '#e7ffde'
+      backgroundSectionTwo: '#e7ffde',
+      backgroundMenu: '#232323'
     },
 
     fontSize: {

@@ -24,3 +24,11 @@ export const FlexContainer = styled(Container)`
   display: flex;
   align-items: center;
 `
+export const FlexCenter = styled(Flex)`
+  justify-content: center; 
+`
+
+export const FlexJustifyCenter = styled.div`
+  display: flex;
+  justify-content: center; 
+`

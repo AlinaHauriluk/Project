@@ -3,6 +3,7 @@ import Promo from '../../components/promo'
 import NewExperience from '../../components/newExperience'
 import SignatureDish from '../../components/signatureDish'
 import DefaultLayout from '../../layout/defaultLayout'
+import Menu from '../../components/menu'
 
 const Home = () => (
   <DefaultLayout>
@@ -16,6 +17,10 @@ const Home = () => (
     <NewExperience />
 
     <SignatureDish />
+
+    <Menu 
+    title='The Menu'
+    subtitle='5 Stars'/>
   </DefaultLayout> 
 )
 
