@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
+import {pulse} from 'react-animations';
 import { SectionContainer, BlockDescription, Star } from "../../box/absoluteBox";
 
 export const SectionSignatureDish = styled(SectionContainer)`
@@ -46,6 +47,7 @@ export const SignatureDishOrder = styled.button`
   :hover {
     color: ${({theme}) => theme.colors.primary};
     background-color: ${({theme}) => theme.colors.secondary};
+    animation: 3s ${keyframes`${pulse}`} infinite;
   }
 `
 export const SignatureDishStar = styled(Star)`
