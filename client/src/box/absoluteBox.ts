@@ -13,13 +13,9 @@ export const BlockDescription = styled.div`
   z-index: 2;
   border: ${({theme}) => theme.colors.secondary} 3px solid;
   background-color: ${({theme}) => theme.colors.primary};
+
 `
-export const Star = styled.span`
-  ::before{
-    content: '\u2605';
-    color: ${({theme}) => theme.colors.secondary};
-  }
-`
+
 
 
 

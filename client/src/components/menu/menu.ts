@@ -1,6 +1,6 @@
 import styled, {keyframes} from "styled-components";
 import {pulse} from 'react-animations';
-import { SectionContainer, Star } from '../../box/absoluteBox'
+import { SectionContainer } from '../../box/absoluteBox'
 import { FlexCenter, FlexSpaceBetween } from '../../box/flexBox';
 
 export const MenuContainer = styled(SectionContainer)`
@@ -10,7 +10,7 @@ export const MenuContainer = styled(SectionContainer)`
 
 export const MenuWrapper = styled(FlexCenter)`
   height: 200px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   background-color: ${({theme}) => theme.colors.backgroundMenu};
 `
 
@@ -26,14 +26,7 @@ export const MenuTitle = styled.h3`
   font-size: ${({theme}) => theme.fontSize.subtitle};
   letter-spacing: 1.8px;
 `
-export const StarMenu = styled(Star)`
-  display: inline-block;
 
-  ::before{
-    content: '\u2605 \u2605 \u2605 \u2605 \u2605';
-    font-size: ${({theme}) => theme.fontSize.mediumMedium};
-  }
-`
 export const MenuPart = styled.div`
   width: calc(33% - 30px);
   padding: 20px;

@@ -1,6 +1,6 @@
 import styled, {keyframes} from "styled-components";
 import {pulse} from 'react-animations';
-import { SectionContainer, BlockDescription, Star } from "../../box/absoluteBox";
+import { SectionContainer, BlockDescription } from "../../box/absoluteBox";
 
 export const SectionSignatureDish = styled(SectionContainer)`
   background-color: ${({theme}) => theme.colors.backgroundSectionTwo};
@@ -50,15 +50,8 @@ export const SignatureDishOrder = styled.button`
     animation: 3s ${keyframes`${pulse}`} infinite;
   }
 `
-export const SignatureDishStar = styled(Star)`
-  display: inline-block;
-  margin-bottom: 10px;
-  
-  ::before{
-    content: '\u2605 \u2605 \u2605 \u2605 \u2605';
-    font-size: ${({theme}) => theme.fontSize.mediumMedium};
-  }
-`
+
+
 
 
 

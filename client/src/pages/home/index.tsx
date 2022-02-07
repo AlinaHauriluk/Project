@@ -13,7 +13,7 @@ const Home = () => (
     particle='is' 
     title='An Extraordinery Experience' 
     description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.'/>
-        
+     
     <NewExperience />
 
     <SignatureDish />

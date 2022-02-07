@@ -2,7 +2,8 @@ import React, {useEffect} from "react";
 import { Container } from "../../box/absoluteBox";
 import { BlockSubTitle } from "../../text/text";
 import { FlexJustifyCenter } from "../../box/flexBox";
-import { MenuContainer, MenuWrapper, MenuWrapperTitle, MenuTitle, StarMenu, MenuPart, MenuPartTitle, MenuList, MenuListWrapper, DishName, DishPrice, DishDescription, DishOrder} from "./menu";
+import { MenuContainer, MenuWrapper, MenuWrapperTitle, MenuTitle,  MenuPart, MenuPartTitle, MenuList, MenuListWrapper, DishName, DishPrice, DishDescription, DishOrder} from "./menu";
+import Rating from "../rating";
 import AOS from 'aos'
 import "aos/dist/aos.css";
 
@@ -23,7 +24,7 @@ const Menu: React.FC<MenuProps> = ({title, subtitle}) => {
         <MenuWrapper data-aos="flip-down">
           <MenuWrapperTitle>
             <BlockSubTitle>{subtitle}</BlockSubTitle>
-            <StarMenu />
+            <Rating />
             <MenuTitle>{title}</MenuTitle>
           </MenuWrapperTitle>
         </MenuWrapper>}

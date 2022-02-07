@@ -1,7 +1,8 @@
 import React, {useEffect} from "react";
-import { SectionSignatureDish, SignatureDishDescription, SignatureDishImage, SignatureDishName, SignatureDishPrice, SignatureDishText, SignatureDishOrder, SignatureDishStar } from "./signatureDish";
+import { SectionSignatureDish, SignatureDishDescription, SignatureDishImage, SignatureDishName, SignatureDishPrice, SignatureDishText, SignatureDishOrder } from "./signatureDish";
 import { FlexContainer, FlexSpaceBetween } from "../../box/flexBox";
 import { BlockTitle, BlockSubTitle } from "../../text/text";
+import Rating from "../rating";
 import AOS from 'aos'
 import "aos/dist/aos.css";
 
@@ -16,8 +17,7 @@ const SignatureDish = () => {
         <SignatureDishDescription data-aos="fade-right">
           <BlockSubTitle>Something new</BlockSubTitle>
           <BlockTitle>Our Signature Dish</BlockTitle>
-          <SignatureDishStar />
-
+          <Rating />
           <FlexSpaceBetween>
             <SignatureDishName>Pork Tenderloin marinated in Green Pepper</SignatureDishName>
             <SignatureDishPrice>20 $</SignatureDishPrice>
