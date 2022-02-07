@@ -16,7 +16,7 @@ const SignatureDish = () => {
         <SignatureDishDescription data-aos="fade-right">
           <BlockSubTitle>Something new</BlockSubTitle>
           <BlockTitle>Our Signature Dish</BlockTitle>
-          <SignatureDishStar /> <SignatureDishStar /> <SignatureDishStar /> <SignatureDishStar /> <SignatureDishStar />
+          <SignatureDishStar />
 
           <FlexSpaceBetween>
             <SignatureDishName>Pork Tenderloin marinated in Green Pepper</SignatureDishName>

@@ -51,9 +51,9 @@ export const SignatureDishOrder = styled.button`
 export const SignatureDishStar = styled(Star)`
   display: inline-block;
   margin-bottom: 10px;
-
+  
   ::before{
-    content: '\u2605';
+    content: '\u2605 \u2605 \u2605 \u2605 \u2605';
     font-size: ${({theme}) => theme.fontSize.mediumMedium};
   }
 `
