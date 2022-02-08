@@ -24,7 +24,7 @@ const Menu: React.FC<MenuProps> = ({title, subtitle}) => {
         <MenuWrapper data-aos="flip-down">
           <MenuWrapperTitle>
             <BlockSubTitle>{subtitle}</BlockSubTitle>
-            <Rating />
+            <Rating rating={1} />
             <MenuTitle>{title}</MenuTitle>
           </MenuWrapperTitle>
         </MenuWrapper>}

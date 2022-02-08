@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 
 export const Star = styled.span`
   cursor: pointer;
@@ -8,20 +8,14 @@ export const Star = styled.span`
 
   ::before{
     content: '\u2605';
-    color: ${({theme}) => theme.colors.colorText};
     font-size: ${({theme}) => theme.fontSize.mediumLarge};
+    color: 'red';
   }
 
-  :hover{
+  :hover {
     ::before{
-      content: '\u2605';
       color: ${({theme}) => theme.colors.secondary};
     }
   }
 `
-export const ClickedStar = styled(Star)`
-  ::before{
-    content: '\u2605';
-    color: ${({theme}) => theme.colors.secondary};
-  }
-`
+
