@@ -1,5 +1,5 @@
-import styled, {keyframes} from "styled-components";
-import {pulse} from 'react-animations';
+import styled, { keyframes } from "styled-components";
+import { pulse } from 'react-animations';
 import { SectionContainer, BlockDescription } from "../../box/absoluteBox";
 
 export const SectionSignatureDish = styled(SectionContainer)`

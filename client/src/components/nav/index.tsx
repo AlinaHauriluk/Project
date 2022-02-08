@@ -1,5 +1,5 @@
 import React from "react";
-import { List, ListItem, PageLink} from "./nav";
+import { List, ListItem, PageLink } from "./nav";
 
 const Nav = () => {
   return (

@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import { SectionSignatureDish, SignatureDishDescription, SignatureDishImage, SignatureDishName, SignatureDishPrice, SignatureDishText, SignatureDishOrder } from "./signatureDish";
 import { FlexContainer, FlexSpaceBetween } from "../../box/flexBox";
 import { BlockTitle, BlockSubTitle } from "../../text/text";

@@ -1,5 +1,5 @@
-import styled, {keyframes} from "styled-components";
-import {pulse} from 'react-animations';
+import styled, { keyframes } from "styled-components";
+import { pulse } from 'react-animations';
 import { SectionContainer } from '../../box/absoluteBox'
 import { FlexCenter, FlexSpaceBetween } from '../../box/flexBox';
 

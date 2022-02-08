@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import { Container } from "../../box/absoluteBox";
 import { BlockSubTitle } from "../../text/text";
 import { FlexJustifyCenter } from "../../box/flexBox";

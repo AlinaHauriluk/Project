@@ -1,7 +1,7 @@
 import React from 'react'
 import { PromoSection, SubTitlePromo, Paragraph, TitlePromo } from './promo'
 import { Container } from '../../box/absoluteBox'
-import {FlexColumn} from '../../box/flexBox'
+import { FlexColumn } from '../../box/flexBox'
 
 interface PromoProps{
   title: string;

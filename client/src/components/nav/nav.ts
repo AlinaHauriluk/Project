@@ -1,5 +1,5 @@
-import styled, {keyframes} from "styled-components";
-import {pulse} from 'react-animations';
+import styled, { keyframes } from "styled-components";
+import { pulse } from 'react-animations';
 import { Link } from "react-router-dom";
 
 export const List = styled.ul`

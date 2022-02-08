@@ -1,5 +1,5 @@
-import React, {useEffect} from "react";
-import { FlexContainer, Flex} from "../../box/flexBox";
+import React, { useEffect } from "react";
+import { FlexContainer, Flex } from "../../box/flexBox";
 import { SectionNewExperience, NewExperienceImage, NewExperienceImageTwo, NewExperienceDescription, NewExperienceText, NewExperienceIcon } from "./newExperience";
 import { BlockSubTitle, BlockTitle } from "../../text/text";
 import AOS from 'aos'
