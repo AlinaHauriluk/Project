@@ -1,7 +1,15 @@
 import React from "react";
 import Nav from "../nav";
 import { Container } from "../../box/absoluteBox";
-import { ButtonSecondary, HeaderSection, LogoTitle, LogoSubtitle,  HeaderFlex, Button, FlipInX } from "./header";
+import {
+  ButtonSecondary,
+  HeaderSection,
+  LogoTitle,
+  LogoSubtitle,
+  HeaderFlex,
+  Button,
+  FlipInX,
+} from "./header";
 
 const Header = () => {
   return (
@@ -11,19 +19,18 @@ const Header = () => {
           <FlipInX>
             <LogoTitle>The Venue</LogoTitle>
             <LogoSubtitle>restaurant</LogoSubtitle>
-           </FlipInX>
-           
-           <Nav /> 
+          </FlipInX>
 
-            <div>
-              <Button>Log In</Button>
-              <ButtonSecondary>Sign Up</ButtonSecondary>
-            </div>
+          <Nav />
 
+          <div>
+            <Button>Log In</Button>
+            <ButtonSecondary>Sign Up</ButtonSecondary>
+          </div>
         </HeaderFlex>
       </Container>
     </HeaderSection>
-    )     
-}
+  );
+};
 
-export default Header
+export default Header;
