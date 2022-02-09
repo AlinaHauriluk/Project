@@ -17,6 +17,8 @@ const Menu: React.FC<MenuProps> = ({title, subtitle}) => {
     AOS.init({ duration: 2000});
   }, []);
 
+  let data = [{id: 1, title: 'Starters', dishes: [{dishName: 'Pork Tenderloin', dishPrice: '20$', dishDescription: 'Pork / Tenderloin / Green Pepper / Veggies'}]}, {id: 2, title: 'Main', dishes: [{dishName: 'Chicken with lemon', dishPrice: '20$', dishDescription: 'Pork / Tenderloin / Green Pepper / Veggies'}]}, {id: 3, title: 'Desserts', dishes: [{dishName: 'Lava cake', dishPrice: '15$', dishDescription: 'Pork / Tenderloin / Green Pepper / Veggies'}]}]
+
   return (
     <MenuContainer>
       <Container>
@@ -30,41 +32,21 @@ const Menu: React.FC<MenuProps> = ({title, subtitle}) => {
         </MenuWrapper>}
 
         <FlexJustifyCenter>
-          <MenuPart data-aos='fade-down'>
-            <MenuPartTitle>Starters</MenuPartTitle>
-            <MenuList>
+        {data.map(item => 
+          <MenuPart key={item.id} data-aos='fade-down'>
+            <MenuPartTitle>{item.title}</MenuPartTitle>
+            {item.dishes.map((i, index) =>
+            <MenuList key={index}>
               <MenuListWrapper>
-                <DishName>Pork Tenderloin</DishName>
-                <DishPrice>20 $</DishPrice>
+                <DishName>{i.dishName}</DishName>
+                <DishPrice>{i.dishPrice}</DishPrice>
               </MenuListWrapper>
-              <DishDescription>Pork / Tenderloin / Green Pepper / Veggies</DishDescription>
-              <DishOrder>Order now</DishOrder>
+              <DishDescription>{i.dishDescription}</DishDescription>
+              <DishOrder>Order now</DishOrder>  
             </MenuList>
+            )}
           </MenuPart>
-
-          <MenuPart data-aos='fade-down'>
-            <MenuPartTitle>Main</MenuPartTitle>
-            <MenuList>
-              <MenuListWrapper>
-                <DishName>Chicken with lemon</DishName>
-                <DishPrice>20 $</DishPrice>
-              </MenuListWrapper>
-              <DishDescription>Pork / Tenderloin / Green Pepper / Veggies</DishDescription>
-              <DishOrder>Order now</DishOrder>
-            </MenuList>
-          </MenuPart>
-
-          <MenuPart data-aos='fade-down'>
-            <MenuPartTitle>Desserts</MenuPartTitle>
-            <MenuList>
-              <MenuListWrapper>
-                <DishName>Lava cake</DishName>
-                <DishPrice>15 $</DishPrice>
-              </MenuListWrapper>
-              <DishDescription>Pork / Tenderloin / Green Pepper / Veggies</DishDescription>
-              <DishOrder>Order now</DishOrder>
-            </MenuList>
-          </MenuPart>
+        )}
         </FlexJustifyCenter>
       </Container>
     </MenuContainer>
@@ -72,3 +54,4 @@ const Menu: React.FC<MenuProps> = ({title, subtitle}) => {
 }
 
 export default Menu
+
