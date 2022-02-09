@@ -1,9 +1,9 @@
-import React from 'react'
-import { PromoSection, SubTitlePromo, Paragraph, TitlePromo } from './promo'
-import { Container } from '../../box/absoluteBox'
-import {FlexColumn} from '../../box/flexBox'
+import React from "react";
+import { PromoSection, SubTitlePromo, Paragraph, TitlePromo } from "./promo";
+import { Container } from "../../box/absoluteBox";
+import { FlexColumn } from "../../box/flexBox";
 
-interface PromoProps{
+interface PromoProps {
   title: string;
   description?: string;
   particle: string;
@@ -11,19 +11,24 @@ interface PromoProps{
   background: string;
 }
 
-const Promo: React.FC<PromoProps> = ({title, description, particle, height, background}) => {
-   
+const Promo: React.FC<PromoProps> = ({
+  title,
+  description,
+  particle,
+  height,
+  background,
+}) => {
   return (
-    <PromoSection ht={`${height}`+ 'px'} bphone={background}>
+    <PromoSection ht={`${height}` + "px"} bphone={background}>
       <Container>
         <FlexColumn>
           <SubTitlePromo>The Venue {particle}</SubTitlePromo>
-            <TitlePromo>{title}</TitlePromo>
-              {description && <Paragraph>{description}</Paragraph>}
-        </FlexColumn>  
+          <TitlePromo>{title}</TitlePromo>
+          {description && <Paragraph>{description}</Paragraph>}
+        </FlexColumn>
       </Container>
     </PromoSection>
-  )
-}
+  );
+};
 
-export default Promo
+export default Promo;

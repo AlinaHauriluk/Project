@@ -1,9 +1,9 @@
-import React from 'react';
-import GlobalStyles from './box/global'
-import {BrowserRouter} from 'react-router-dom'
-import { ThemeProvider } from 'styled-components'
-import { baseTheme } from './theme/theme'
-import Home from './pages/home';
+import React from "react";
+import GlobalStyles from "./box/global";
+import { BrowserRouter } from "react-router-dom";
+import { ThemeProvider } from "styled-components";
+import { baseTheme } from "./theme/theme";
+import Home from "./pages/home";
 
 const App = () => {
   return (
@@ -14,6 +14,6 @@ const App = () => {
       </BrowserRouter>
     </ThemeProvider>
   );
-}
+};
 
 export default App;

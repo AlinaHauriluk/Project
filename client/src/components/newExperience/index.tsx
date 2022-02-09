@@ -1,34 +1,46 @@
-import React, {useEffect} from "react";
-import { FlexContainer, Flex} from "../../box/flexBox";
-import { SectionNewExperience, NewExperienceImage, NewExperienceImageTwo, NewExperienceDescription, NewExperienceText, NewExperienceIcon } from "./newExperience";
+import React, { useEffect } from "react";
+import { FlexContainer, Flex } from "../../box/flexBox";
+import {
+  SectionNewExperience,
+  NewExperienceImage,
+  NewExperienceImageTwo,
+  NewExperienceDescription,
+  NewExperienceText,
+  NewExperienceIcon,
+} from "./newExperience";
 import { BlockSubTitle, BlockTitle } from "../../text/text";
-import AOS from 'aos'
+import AOS from "aos";
 import "aos/dist/aos.css";
 
 const NewExperience = () => {
-
-  useEffect(() => {   
-    AOS.init({ duration : 2000});
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
   }, []);
 
-  return(
+  return (
     <SectionNewExperience>
-      <FlexContainer data-aos='fade-down'>
+      <FlexContainer data-aos="fade-down">
         <Flex>
-          <NewExperienceImage/>
+          <NewExperienceImage />
           <NewExperienceImageTwo />
         </Flex>
 
-        <NewExperienceDescription  data-aos="fade-left">
+        <NewExperienceDescription data-aos="fade-left">
           <BlockSubTitle>Something new</BlockSubTitle>
-		      <BlockTitle>An Extraordinery Experience</BlockTitle>
+          <BlockTitle>An Extraordinery Experience</BlockTitle>
           <NewExperienceIcon />
-		      <NewExperienceText>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Ut non justo eleifend, facilisis nibh ut, interdum odio. Suspendisse potenti. Vivamus luctus diam eu neque rutrum, vitae aliquet dolor venenatis. Nulla consequat fringilla massa.</NewExperienceText>
-          </NewExperienceDescription> 
+          <NewExperienceText>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum.
+            Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Ut non
+            justo eleifend, facilisis nibh ut, interdum odio. Suspendisse
+            potenti. Vivamus luctus diam eu neque rutrum, vitae aliquet dolor
+            venenatis. Nulla consequat fringilla massa.
+          </NewExperienceText>
+        </NewExperienceDescription>
       </FlexContainer>
     </SectionNewExperience>
-  )
-}
+  );
+};
 
-export default NewExperience
-        
+export default NewExperience;
