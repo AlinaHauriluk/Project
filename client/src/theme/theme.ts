@@ -8,8 +8,9 @@ export const baseTheme = {
     colorText: "#636363",
     backgroundSectionTwo: "#e7ffde",
     backgroundMenu: "#232323",
+    colorOption: "#282828"
   },
-  
+
   fontSize: {
     title: "48px",
     subtitle: "38px",
@@ -18,11 +19,11 @@ export const baseTheme = {
     mediumMedium: "18px",
     medium: "16px",
     mediumSmall: "13px",
-    small: "12px",
+    small: "12px"
   },
 
   fontFamily: {
     promo: '"Poppins", sans-serif',
-    cursiv: '"Sedgwick Ave", cursive',
-  },
+    cursiv: '"Sedgwick Ave", cursive'
+  }
 };
