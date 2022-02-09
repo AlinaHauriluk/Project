@@ -18,15 +18,15 @@ const Menu: React.FC<MenuProps> = ({title, subtitle}) => {
   }, []);
 
   const data = [
-    {id: 1, 
-    title: 'Starters', 
-    dishes: [{dishId: 1, dishName: 'Pork Tenderloin', dishPrice: '20$', dishDescription: 'Pork / Tenderloin / Green Pepper / Veggies'}]}, 
-    {id: 2, 
-    title: 'Main', 
-    dishes: [{dishId: 2, dishName: 'Chicken with lemon', dishPrice: '20$', dishDescription: 'Pork / Tenderloin / Green Pepper / Veggies'}]}, 
-    {id: 3, 
-    title: 'Desserts', 
-    dishes: [{dishId: 3, dishName: 'Lava cake', dishPrice: '15$', dishDescription: 'Pork / Tenderloin / Green Pepper / Veggies'}]}
+    { id: 1, title: 'Starters', dishes: [
+      { id: 1, name: 'Pork Tenderloin', price: '20$', description: 'Pork / Tenderloin / Green Pepper / Veggies' }
+    ]}, 
+    { id: 2, title: 'Main', dishes: [
+      { id: 2, name: 'Chicken with lemon', price: '20$', description: 'Pork / Tenderloin / Green Pepper / Veggies' }
+    ]}, 
+    { id: 3, title: 'Desserts', dishes: [
+      { id: 3, name: 'Lava cake', price: '15$', description: 'Pork / Tenderloin / Green Pepper / Veggies' }
+    ] }
   ]
 
   return (
@@ -46,12 +46,12 @@ const Menu: React.FC<MenuProps> = ({title, subtitle}) => {
           <MenuPart key={item.id} data-aos='fade-down'>
             <MenuPartTitle>{item.title}</MenuPartTitle>
             {item.dishes.map(i =>
-            <MenuList key={i.dishId}>
+            <MenuList key={i.id}>
               <MenuListWrapper>
-                <DishName>{i.dishName}</DishName>
-                <DishPrice>{i.dishPrice}</DishPrice>
+                <DishName>{i.name}</DishName>
+                <DishPrice>{i.price}</DishPrice>
               </MenuListWrapper>
-              <DishDescription>{i.dishDescription}</DishDescription>
+              <DishDescription>{i.description}</DishDescription>
               <DishOrder>Order now</DishOrder>  
             </MenuList>
             )}
