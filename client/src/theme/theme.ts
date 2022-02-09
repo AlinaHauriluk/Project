@@ -9,7 +9,7 @@ export const baseTheme = {
     backgroundSectionTwo: "#e7ffde",
     backgroundMenu: "#232323",
   },
-
+  
   fontSize: {
     title: "48px",
     subtitle: "38px",
