@@ -4,7 +4,7 @@ import DefaultLayout from "../../layout/defaultLayout";
 const Menu = () => {
   return(
     <DefaultLayout>
-      <div>Menu</div>
+      ...
     </DefaultLayout>
   )
 }

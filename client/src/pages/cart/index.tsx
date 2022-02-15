@@ -4,7 +4,7 @@ import DefaultLayout from "../../layout/defaultLayout";
 const Cart = () => {
   return(
     <DefaultLayout>
-      <div>Cart</div>
+      ...
     </DefaultLayout>
   )
 }

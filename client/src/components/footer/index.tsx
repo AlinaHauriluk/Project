@@ -11,12 +11,13 @@ import {
 } from "./footer";
 import { FlexContainerSpace, FlexStartColumn } from "../../box/flexBox";
 
+const contacts = [
+  { id: 1, title: "Address:", info: "481 Creekside Lane Avila CA" },
+  { id: 2, title: "Phone:", info: "+53 345 7953 32453" },
+  { id: 3, title: "Email:", info: "yourmail@gmail" },
+];
+
 const Footer = () => {
-  const contacts = [
-    { id: 1, title: "Address:", info: "481 Creekside Lane Avila CA" },
-    { id: 2, title: "Phone:", info: "+53 345 7953 32453" },
-    { id: 3, title: "Email:", info: "yourmail@gmail" },
-  ];
   return (
     <FooterBlock>
       <FlexContainerSpace>
