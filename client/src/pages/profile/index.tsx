@@ -1,12 +1,10 @@
 import React from "react";
 import DefaultLayout from "../../layout/defaultLayout";
 
-const Profile = () => {
-  return(
-    <DefaultLayout>
-      ...
-    </DefaultLayout>
-  )
-}
+const Profile = () => (
+  <DefaultLayout>
+    <div>Profile</div>
+  </DefaultLayout>
+);
 
-export default Profile
+export default Profile;

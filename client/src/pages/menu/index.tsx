@@ -1,12 +1,10 @@
 import React from "react";
 import DefaultLayout from "../../layout/defaultLayout";
 
-const Menu = () => {
-  return(
-    <DefaultLayout>
-      ...
-    </DefaultLayout>
-  )
-}
+const Menu = () => (
+  <DefaultLayout>
+    <div>Menu</div>
+  </DefaultLayout>
+);
 
-export default Menu
+export default Menu;

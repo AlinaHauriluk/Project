@@ -1,12 +1,10 @@
 import React from "react";
 import DefaultLayout from "../../layout/defaultLayout";
 
-const About = () => {
-  return(
-    <DefaultLayout>
-      ...
-    </DefaultLayout>
-  )
-}
+const About = () => (
+  <DefaultLayout>
+    <div>About</div>
+  </DefaultLayout>
+);
 
-export default About
+export default About;

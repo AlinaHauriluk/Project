@@ -1,12 +1,10 @@
 import React from "react";
 import DefaultLayout from "../../layout/defaultLayout";
 
-const Cart = () => {
-  return(
-    <DefaultLayout>
-      ...
-    </DefaultLayout>
-  )
-}
+const Cart = () => (
+  <DefaultLayout>
+    <div>Cart</div>
+  </DefaultLayout>
+);
 
-export default Cart
+export default Cart;
