@@ -1,9 +1,13 @@
 import styled from "styled-components";
 import { SubTitle, Title } from "../../text/text";
 
-export const PromoSection = styled.div<{ ht: string; bphone: string }>`
+export const PromoSection = styled.div<{
+  ht: string;
+  bphone: string;
+  position: string;
+}>`
   background: url(${(props) => props.bphone});
-  background-position: "top";
+  background-position: ${(props) => props.position};
   height: ${(props) => props.ht};
 `;
 export const TitlePromo = styled(Title)`
@@ -17,9 +21,10 @@ export const Paragraph = styled.p`
   text-align: center;
 `;
 
-export const SubTitlePromo = styled(SubTitle)`
+export const SubTitlePromo = styled(SubTitle)<{ mg: string }>`
   font-weight: bold;
   line-height: 0.75;
   margin-bottom: 45px;
   font-size: ${({ theme }) => theme.fontSize.title};
+  margin-top: ${(props) => props.mg};
 `;

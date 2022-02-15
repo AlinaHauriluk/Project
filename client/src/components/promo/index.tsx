@@ -6,9 +6,11 @@ import { FlexColumn } from "../../box/flexBox";
 interface PromoProps {
   title: string;
   description?: string;
-  particle: string;
+  particle?: string;
   height: string;
   background: string;
+  margin?: string;
+  position?: string;
 }
 
 const Promo: React.FC<PromoProps> = ({
@@ -17,12 +19,20 @@ const Promo: React.FC<PromoProps> = ({
   particle,
   height,
   background,
+  margin,
+  position,
 }) => {
   return (
-    <PromoSection ht={`${height}` + "px"} bphone={background}>
+    <PromoSection
+      ht={`${height}` + "px"}
+      bphone={background}
+      position={`${position}`}
+    >
       <Container>
         <FlexColumn>
-          <SubTitlePromo>The Venue {particle}</SubTitlePromo>
+          <SubTitlePromo mg={`${margin}` + "px"}>
+            The Venue {particle}
+          </SubTitlePromo>
           <TitlePromo>{title}</TitlePromo>
           {description && <Paragraph>{description}</Paragraph>}
         </FlexColumn>
