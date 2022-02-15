@@ -4,7 +4,6 @@ import NewExperience from "../../components/newExperience";
 import SignatureDish from "../../components/signatureDish";
 import DefaultLayout from "../../layout/defaultLayout";
 import Menu from "../../components/menu";
-import Reservation from "../../components/reservation";
 
 const Home = () => (
   <DefaultLayout>
@@ -22,7 +21,6 @@ const Home = () => (
 
     <Menu title="The Menu" subtitle="5 Stars" />
 
-    <Reservation />
   </DefaultLayout>
 );
 

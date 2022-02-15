@@ -18,7 +18,7 @@ export const FlexColumnContainer = styled(Container)`
   align-items: center;
   justify-content: center;
   height: 100%;
-`
+`;
 export const FlexSpaceBetween = styled(Flex)`
   justify-content: space-between;
 `;
@@ -39,3 +39,11 @@ export const FlexJustifyCenter = styled.div`
   display: flex;
   justify-content: center;
 `;
+
+export const FlexStartColumn = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+`;
+
+

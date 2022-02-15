@@ -8,7 +8,10 @@ export const baseTheme = {
     colorText: "#636363",
     backgroundSectionTwo: "#e7ffde",
     backgroundMenu: "#232323",
-    colorOption: "#282828"
+    colorOption: "#282828",
+    backgroundFooter: '#232323',
+    colorFooter: '#a5a4a4',
+    colorFooterContact: '#c49a8f'
   },
 
   fontSize: {

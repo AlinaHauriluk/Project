@@ -46,7 +46,9 @@ export const MenuPartTitle = styled(FlexCenter)`
   letter-spacing: 1.8px;
   font-weight: 600;
   margin-bottom: 20px;
-  animation: 5s ${keyframes`${pulse}`} infinite;
+  z-index: 2;
+  background-color: ${({ theme }) => theme.colors.backgroundSectionTwo};
+  animation: 6s ${keyframes`${pulse}`} infinite;
 `;
 
 export const MenuList = styled.div`
