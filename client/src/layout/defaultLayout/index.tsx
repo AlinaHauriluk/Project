@@ -1,4 +1,6 @@
 import React from "react";
+import Reservation from "../../components/reservation";
+import Footer from "../../components/footer";
 import Header from "../../components/header";
 
 interface DefaultLayoutProps {
@@ -10,6 +12,8 @@ const DefaultLayout: React.FC<DefaultLayoutProps> = ({ children }) => {
     <>
       <Header />
       {children}
+      <Reservation />
+      <Footer />
     </>
   );
 };

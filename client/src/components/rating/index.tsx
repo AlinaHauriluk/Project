@@ -12,8 +12,6 @@ const Rating = ({ rating }: RatingProps) => {
     setRating(rating);
   }, [rating]);
 
-  console.log(rating);
-
   return (
     <>
       {Array.from({ length: 5 }).map((i, index) => (

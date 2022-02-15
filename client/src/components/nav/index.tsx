@@ -9,23 +9,23 @@ const Nav = () => {
       </ListItem>
 
       <ListItem>
-        <PageLink to="/">About</PageLink>
+        <PageLink to="/about">About</PageLink>
       </ListItem>
 
       <ListItem>
-        <PageLink to="/">Menu</PageLink>
+        <PageLink to="/menu">Menu</PageLink>
       </ListItem>
 
       <ListItem>
-        <PageLink to="/">Your Cart</PageLink>
+        <PageLink to="/cart">Your Cart</PageLink>
       </ListItem>
 
       <ListItem>
-        <PageLink to="/">Your profile</PageLink>
+        <PageLink to="/profile">Your profile</PageLink>
       </ListItem>
 
       <ListItem>
-        <PageLink to="/">Contacts</PageLink>
+        <PageLink to="/contacts">Contacts</PageLink>
       </ListItem>
     </List>
   );
