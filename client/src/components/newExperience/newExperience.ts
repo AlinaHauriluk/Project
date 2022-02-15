@@ -25,9 +25,9 @@ export const NewExperienceDescription = styled(BlockDescription)`
 
 export const NewExperienceText = styled.p`
   font-size: ${({ theme }) => theme.fontSize.mediumSmall};
-  font-weight: 600;
-  letter-spacing: 0.8px;
+  line-height: 1.6;
   color: ${({ theme }) => theme.colors.colorText};
+  text-align: justify;
 `;
 
 export const NewExperienceIcon = styled.div`

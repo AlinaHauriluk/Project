@@ -24,7 +24,7 @@ export const SignatureDishName = styled.h3`
 `;
 
 export const SignatureDishPrice = styled.span`
-  font-size: ${({ theme }) => theme.fontSize.mediumLarge};
+  font-size: ${({ theme }) => theme.fontSize.mediumMedium};
   font-weight: 600;
 `;
 
