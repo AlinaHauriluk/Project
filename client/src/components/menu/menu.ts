@@ -64,7 +64,7 @@ export const DishName = styled.h4`
 
 export const DishPrice = styled.span`
   font-weight: 600;
-  font-size: ${({ theme }) => theme.fontSize.mediumLarge};
+  font-size: ${({ theme }) => theme.fontSize.mediumMedium};
   color: ${({ theme }) => theme.colors.colorText};
 `;
 

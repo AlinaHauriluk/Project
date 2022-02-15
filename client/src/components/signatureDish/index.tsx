@@ -30,7 +30,7 @@ const SignatureDish = () => {
             <SignatureDishName>
               Pork Tenderloin marinated in Green Pepper
             </SignatureDishName>
-            <SignatureDishPrice>20 $</SignatureDishPrice>
+            <SignatureDishPrice>20 USD</SignatureDishPrice>
           </FlexSpaceBetween>
 
           <SignatureDishText>

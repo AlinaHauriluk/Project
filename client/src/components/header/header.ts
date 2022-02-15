@@ -36,6 +36,7 @@ export const Button = styled.button`
   line-height: 0.65;
   font-size: ${({ theme }) => theme.fontSize.medium};
   display: inline-block;
+  cursor: pointer;
 
   :hover {
     background-color: ${({ theme }) => theme.colors.secondary};
