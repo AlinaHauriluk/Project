@@ -5,13 +5,19 @@ import SignatureDish from "../../components/signatureDish";
 import DefaultLayout from "../../layout/defaultLayout";
 import Menu from "../../components/menu";
 
+const styles = {
+  section: {
+    backgroundPosition: 'top',
+  }
+};
+
 const Home = () => (
   <DefaultLayout>
     <Promo
       particle="is"
       title="An Extraordinery Experience"
       description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus."
-      homeStyles='homeStyles'
+      style={styles.section}
     />
 
     <NewExperience />

@@ -18,6 +18,7 @@ export const Paragraph = styled.p`
 `;
 
 export const SubTitlePromo = styled(SubTitle)`
+  margin-top: 80px;
   font-weight: bold;
   line-height: 0.75;
   margin-bottom: 45px;

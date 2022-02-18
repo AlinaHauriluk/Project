@@ -2,35 +2,31 @@ import React from "react";
 import { PromoSection, SubTitlePromo, Paragraph, TitlePromo } from "./promo";
 import { Container } from "../../box/absoluteBox";
 import { FlexColumn } from "../../box/flexBox";
+import { CSSProperties } from "styled-components";
 
 interface PromoProps {
   title: string;
   description?: string;
   particle?: string;
-  aboutStyles?: string;
-  homeStyles?: string;
+  style?: CSSProperties;
 }
 
 const Promo: React.FC<PromoProps> = ({
   title,
   description,
   particle,
-  aboutStyles,
-  homeStyles,
+  style,
 }) => {
   return (
     <PromoSection
       style={{
-        height: homeStyles && "580px",
-        backgroundPosition: homeStyles && "top",
-        backgroundImage: aboutStyles && `url(${require("../../assets/aboutPromoImage.jpg")})`,
+        height: '480px',
+        ...(style || {})
       }}
     >
       <Container>
         <FlexColumn>
-          <SubTitlePromo style={{ marginTop: aboutStyles && "80px" }}>
-            The Venue {particle}
-          </SubTitlePromo>
+          <SubTitlePromo>The Venue {particle}</SubTitlePromo>
           <TitlePromo>{title}</TitlePromo>
           {description && <Paragraph>{description}</Paragraph>}
         </FlexColumn>
@@ -40,3 +36,4 @@ const Promo: React.FC<PromoProps> = ({
 };
 
 export default Promo;
+
