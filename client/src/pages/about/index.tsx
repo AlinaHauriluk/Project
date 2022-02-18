@@ -5,12 +5,7 @@ import Chefs from "../../components/chefs";
 
 const About = () => (
   <DefaultLayout>
-    <Promo
-      margin="80"
-      title="About Us"
-      height="460"
-      background={require("../../assets/aboutPromoImage.jpg")}
-    />
+    <Promo title="About Us" aboutStyles='aboutStyles' />
     <Chefs />
   </DefaultLayout>
 );

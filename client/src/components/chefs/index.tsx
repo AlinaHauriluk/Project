@@ -1,14 +1,9 @@
 import React, { useEffect } from "react";
-import {
-  ChefSection,
-  ChefsPersonsWrapper,
-  ChefsPersonsPhoto,
-  ChefPersonsName,
-  ChefPersonsPosition,
-} from "./chefs";
+import { ChefSection } from "./chefs";
 import { Container } from "../../box/absoluteBox";
 import SomethingNew from "../somethingNew";
 import { FlexCenter } from "../../box/flexBox";
+import ChefsInfo from '../../components/chefsInfo'
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -63,13 +58,7 @@ const Chefs = () => {
               consequat fringilla."
         />
         <FlexCenter>
-          {chefData.map((chef) => (
-            <ChefsPersonsWrapper data-aos="fade-down" key={chef.id}>
-              <ChefsPersonsPhoto photo={chef.photo} />
-              <ChefPersonsName>{chef.name}</ChefPersonsName>
-              <ChefPersonsPosition>{chef.position}</ChefPersonsPosition>
-            </ChefsPersonsWrapper>
-          ))}
+          <ChefsInfo chefs={chefData} />
         </FlexCenter>
       </Container>
     </ChefSection>

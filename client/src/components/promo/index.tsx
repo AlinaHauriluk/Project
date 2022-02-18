@@ -7,30 +7,28 @@ interface PromoProps {
   title: string;
   description?: string;
   particle?: string;
-  height: string;
-  background: string;
-  margin?: string;
-  position?: string;
+  aboutStyles?: string;
+  homeStyles?: string;
 }
 
 const Promo: React.FC<PromoProps> = ({
   title,
   description,
   particle,
-  height,
-  background,
-  margin,
-  position,
+  aboutStyles,
+  homeStyles,
 }) => {
   return (
     <PromoSection
-      ht={`${height}` + "px"}
-      bphone={background}
-      position={`${position}`}
+      style={{
+        height: homeStyles && "580px",
+        backgroundPosition: homeStyles && "top",
+        backgroundImage: aboutStyles && `url(${require("../../assets/aboutPromoImage.jpg")})`,
+      }}
     >
       <Container>
         <FlexColumn>
-          <SubTitlePromo mg={`${margin}` + "px"}>
+          <SubTitlePromo style={{ marginTop: aboutStyles && "80px" }}>
             The Venue {particle}
           </SubTitlePromo>
           <TitlePromo>{title}</TitlePromo>

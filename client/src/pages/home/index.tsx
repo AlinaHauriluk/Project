@@ -8,12 +8,10 @@ import Menu from "../../components/menu";
 const Home = () => (
   <DefaultLayout>
     <Promo
-      background={require("../../assets/homePromoImage.jpg")}
-      height="580"
       particle="is"
-      position="top"
       title="An Extraordinery Experience"
       description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus."
+      homeStyles='homeStyles'
     />
 
     <NewExperience />
