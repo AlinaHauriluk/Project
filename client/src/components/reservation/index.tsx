@@ -1,7 +1,7 @@
 import React from "react";
 import { useForm, Controller } from "react-hook-form";
 import { ReservationSection, ReservationTitle } from "./reservation";
-import { FlexColumnContainer, FlexCenter } from "../../box/flexBox";
+import { FlexColumnContainer, FlexCenter } from "../../box/flex-box";
 import "react-datepicker/dist/react-datepicker.css";
 import {
   ButtonForm,
@@ -11,7 +11,7 @@ import {
   InputTime,
   InputPerson,
 } from "../../box/form";
-import { BlockDescription } from "../../box/absoluteBox";
+import { BlockDescription } from "../../box/absolute-box";
 import { BlockSubTitle } from "../../text/text";
 
 type FormValues = {
@@ -66,7 +66,7 @@ const Reservation = () => {
 
             <InputPerson
               type="number"
-              placeholder="number of persons"
+              placeholder="persons"
               max="6"
               min="1"
               {...register("persons", { required: true })}

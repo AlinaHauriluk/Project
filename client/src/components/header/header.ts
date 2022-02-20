@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import { Flex } from "../../box/flexBox";
+import { Flex } from "../../box/flex-box";
 import { flipInX, swing } from "react-animations";
 
 export const HeaderSection = styled.header`

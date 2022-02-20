@@ -1,6 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import { pulse } from "react-animations";
-import { SectionContainer, BlockDescription } from "../../box/absoluteBox";
+import { SectionContainer, BlockDescription } from "../../box/absolute-box";
 
 export const SectionSignatureDish = styled(SectionContainer)`
   background-color: ${({ theme }) => theme.colors.backgroundSectionTwo};

@@ -1,6 +1,6 @@
 import React from "react";
 import Nav from "../nav";
-import { Container } from "../../box/absoluteBox";
+import { Container } from "../../box/absolute-box";
 import {
   ButtonSecondary,
   HeaderSection,

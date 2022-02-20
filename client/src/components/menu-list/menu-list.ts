@@ -1,7 +1,7 @@
 import styled, { keyframes } from "styled-components";
 import { pulse } from "react-animations";
-import { SectionContainer } from "../../box/absoluteBox";
-import { FlexCenter, FlexSpaceBetween } from "../../box/flexBox";
+import { SectionContainer } from "../../box/absolute-box";
+import { FlexCenter, FlexSpaceBetween } from "../../box/flex-box";
 
 export const MenuContainer = styled(SectionContainer)`
   background-color: ${({ theme }) => theme.colors.backgroundSection};
