@@ -1,7 +1,7 @@
 import { stringify } from "querystring";
 import React from "react";
 import { BlockTitle, BlockSubTitle } from "../../text/text";
-import { SomethingNewFlex, SomethingNewText } from "./somethingNew";
+import { SomethingNewFlex, SomethingNewText } from "./something-new";
 
 interface SomethingNewProps {
   title: string;

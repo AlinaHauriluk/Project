@@ -7,8 +7,8 @@ import {
   SignatureDishPrice,
   SignatureDishText,
   SignatureDishOrder,
-} from "./signatureDish";
-import { FlexContainer, FlexSpaceBetween } from "../../box/flexBox";
+} from "./signature-dish";
+import { FlexContainer, FlexSpaceBetween } from "../../box/flex-box";
 import { BlockTitle, BlockSubTitle } from "../../text/text";
 import Rating from "../rating";
 import AOS from "aos";

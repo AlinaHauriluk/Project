@@ -1,14 +1,14 @@
 import React from "react";
 import Promo from "../../components/promo";
-import NewExperience from "../../components/newExperience";
-import SignatureDish from "../../components/signatureDish";
+import NewExperience from "../../components/new-experience";
+import SignatureDish from "../../components/signature-dish";
 import DefaultLayout from "../../layout/defaultLayout";
-import Menu from "../../components/menu";
+import Menu from "../../components/menu-list";
 
 const styles = {
   section: {
-    backgroundPosition: 'top',
-  }
+    backgroundPosition: "top",
+  },
 };
 
 const Home = () => (

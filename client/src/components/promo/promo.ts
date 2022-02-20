@@ -1,8 +1,7 @@
 import styled from "styled-components";
 import { SubTitle, Title } from "../../text/text";
 
-export const PromoSection = styled.div`
-  height: 460px;
+export const PromoSection = styled.div` 
   background-image: url(${require("../../assets/homePromoImage.jpg")});
 `;
 

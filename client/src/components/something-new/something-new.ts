@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { FlexCenter } from "../../box/flexBox";
+import { FlexCenter } from "../../box/flex-box";
 
 export const SomethingNewFlex = styled(FlexCenter)`
   margin-top: 20px;

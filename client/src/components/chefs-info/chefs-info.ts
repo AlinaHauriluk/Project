@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { FlexColumn } from "../../box/flexBox";
+import { FlexColumn } from "../../box/flex-box";
 
 export const ChefsInfoWrapper = styled(FlexColumn)`
   width: calc(33.3% - 30px);

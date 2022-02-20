@@ -4,8 +4,7 @@ import {
   ChefsInfoPhoto,
   ChefsInfoName,
   ChefsInfoPosition,
-} from "./chefsInfo";
-import { FlexCenter } from "../../box/flexBox";
+} from "./chefs-info";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -19,7 +18,7 @@ const ChefsInfo: React.FC <ChefsInfoProps> = ({chefs}) => {
   }, []);
 
   return (
-    <FlexCenter>
+    <>
       {chefs.map(chef => (
         <ChefsInfoWrapper data-aos="fade-down" key={chef.id}>
           <ChefsInfoPhoto photo={chef.photo} />
@@ -27,7 +26,7 @@ const ChefsInfo: React.FC <ChefsInfoProps> = ({chefs}) => {
           <ChefsInfoPosition>{chef.position}</ChefsInfoPosition>
         </ChefsInfoWrapper>
       ))}
-    </FlexCenter>
+    </>
   );
 };
 

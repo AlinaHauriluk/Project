@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { FlexContainer, Flex } from "../../box/flexBox";
+import { FlexContainer, Flex } from "../../box/flex-box";
 import {
   SectionNewExperience,
   NewExperienceImage,
@@ -7,7 +7,7 @@ import {
   NewExperienceDescription,
   NewExperienceText,
   NewExperienceIcon,
-} from "./newExperience";
+} from "./new-experience";
 import { BlockSubTitle, BlockTitle } from "../../text/text";
 import AOS from "aos";
 import "aos/dist/aos.css";

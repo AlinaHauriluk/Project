@@ -9,7 +9,7 @@ import {
   FooterContactTitle,
   FooterContactInfo,
 } from "./footer";
-import { FlexContainerSpace, FlexStartColumn } from "../../box/flexBox";
+import { FlexContainerSpace, FlexStartColumn } from "../../box/flex-box";
 
 const contacts = [
   { id: 1, title: "Address:", info: "481 Creekside Lane Avila CA" },

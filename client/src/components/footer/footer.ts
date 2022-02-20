@@ -1,6 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import { flash } from "react-animations";
-import { FlexJustifyCenter } from "../../box/flexBox";
+import { FlexJustifyCenter } from "../../box/flex-box";
 
 export const FooterBlock = styled.div`
   background-color: ${({ theme }) => theme.colors.backgroundFooter};

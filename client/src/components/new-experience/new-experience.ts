@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { SectionContainer, BlockDescription } from "../../box/absoluteBox";
+import { SectionContainer, BlockDescription } from "../../box/absolute-box";
 
 export const SectionNewExperience = styled(SectionContainer)`
   background-color: ${({ theme }) => theme.colors.backgroundSection};
