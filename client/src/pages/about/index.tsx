@@ -2,6 +2,7 @@ import React from "react";
 import DefaultLayout from "../../layout/defaultLayout";
 import Promo from "../../components/promo";
 import Chefs from "../../components/chefs";
+import Testimonials from "../../components/testimonials";
 
 const styles = {
   section: {
@@ -14,6 +15,7 @@ const About = () => (
   <DefaultLayout>
     <Promo title="About Us" style ={styles.section} />
     <Chefs />
+    <Testimonials />
   </DefaultLayout>
 );
 
