@@ -16,6 +16,7 @@
     "react-scripts": "5.0.0",
     "react-simple-animate": "^3.3.12",
     "styled-components": "^5.3.3",
+    "tiny-slider-react": "^0.5.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -46,6 +47,7 @@
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
+    "@types/tiny-slider-react": "^0.3.3",
     "@types/aos": "^3.0.4",
     "@types/jest": "^27.4.0",
     "@types/node": "^16.11.21",
