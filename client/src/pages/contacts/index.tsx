@@ -3,8 +3,8 @@ import DefaultLayout from "../../layout/defaultLayout";
 
 const Contacts = () => (
   <DefaultLayout>
-    <div>Contacts</div>
+    
   </DefaultLayout>
 );
 
-export default Contacts;
+export default Contacts

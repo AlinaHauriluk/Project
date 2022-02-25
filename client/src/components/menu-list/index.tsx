@@ -2,20 +2,7 @@ import React, { useEffect } from "react";
 import { Container } from "../../box/absolute-box";
 import { BlockSubTitle } from "../../text/text";
 import { FlexJustifyCenter } from "../../box/flex-box";
-import {
-  MenuContainer,
-  MenuWrapper,
-  MenuWrapperTitle,
-  MenuTitle,
-  MenuPart,
-  MenuPartTitle,
-  MenuList,
-  MenuListWrapper,
-  DishName,
-  DishPrice,
-  DishDescription,
-  DishOrder,
-} from "./menu-list";
+import * as _ from "./menu-list";
 import Rating from "../rating";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -67,46 +54,46 @@ const data = [
   },
 ];
 
-const Menu: React.FC<MenuProps> = ({ title, subtitle }) => {
+const MenuList: React.FC<MenuProps> = ({ title, subtitle }) => {
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
 
   return (
-    <MenuContainer>
+    <_.MenuContainer>
       <Container>
         {title && subtitle && (
-          <MenuWrapper data-aos="flip-down">
-            <MenuWrapperTitle>
+          <_.MenuWrapper data-aos="flip-down">
+            <_.MenuWrapperTitle>
               <BlockSubTitle>{subtitle}</BlockSubTitle>
               <Rating rating={1} />
-              <MenuTitle>{title}</MenuTitle>
-            </MenuWrapperTitle>
-          </MenuWrapper>
+              <_.MenuTitle>{title}</_.MenuTitle>
+            </_.MenuWrapperTitle>
+          </_.MenuWrapper>
         )}
 
         <FlexJustifyCenter>
           {data.map((item) => (
-            <MenuPart key={item.id} data-aos="fade-down">
-              <MenuPartTitle>{item.title}</MenuPartTitle>
+            <_.MenuPart key={item.id} data-aos="fade-down">
+              <_.MenuPartTitle>{item.title}</_.MenuPartTitle>
               {item.dishes.map((i) => (
-                <MenuList key={i.id}>
-                  <MenuListWrapper>
-                    <DishName>{i.name}</DishName>
-                    <DishPrice>
+                <_.MenuListContainer key={i.id}>
+                  <_.MenuListWrapper>
+                    <_.DishName>{i.name}</_.DishName>
+                    <_.DishPrice>
                       {i.price} {i.currency}
-                    </DishPrice>
-                  </MenuListWrapper>
-                  <DishDescription>{i.description}</DishDescription>
-                  <DishOrder>Order now</DishOrder>
-                </MenuList>
+                    </_.DishPrice>
+                  </_.MenuListWrapper>
+                  <_.DishDescription>{i.description}</_.DishDescription>
+                  <_.DishOrder>Order now</_.DishOrder>
+                </_.MenuListContainer>
               ))}
-            </MenuPart>
+            </_.MenuPart>
           ))}
         </FlexJustifyCenter>
       </Container>
-    </MenuContainer>
+    </_.MenuContainer>
   );
 };
 
-export default Menu;
+export default MenuList;

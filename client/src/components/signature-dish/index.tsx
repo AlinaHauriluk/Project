@@ -1,15 +1,8 @@
 import React, { useEffect } from "react";
-import {
-  SectionSignatureDish,
-  SignatureDishDescription,
-  SignatureDishImage,
-  SignatureDishName,
-  SignatureDishPrice,
-  SignatureDishText,
-  SignatureDishOrder,
-} from "./signature-dish";
+import * as _ from "./signature-dish";
 import { FlexContainer, FlexSpaceBetween } from "../../box/flex-box";
 import { BlockTitle, BlockSubTitle } from "../../text/text";
+import { ButtonOrder } from "../../box/absolute-box";
 import Rating from "../rating";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -20,27 +13,27 @@ const SignatureDish = () => {
   }, []);
 
   return (
-    <SectionSignatureDish>
+    <_.SectionSignatureDish>
       <FlexContainer>
-        <SignatureDishDescription data-aos="fade-right">
+        <_.SignatureDishDescription data-aos="fade-right">
           <BlockSubTitle>Something new</BlockSubTitle>
           <BlockTitle>Our Signature Dish</BlockTitle>
           <Rating rating={2} />
           <FlexSpaceBetween>
-            <SignatureDishName>
+            <_.SignatureDishName>
               Pork Tenderloin marinated in Green Pepper
-            </SignatureDishName>
-            <SignatureDishPrice>20 USD</SignatureDishPrice>
+            </_.SignatureDishName>
+            <_.SignatureDishPrice>20 USD</_.SignatureDishPrice>
           </FlexSpaceBetween>
 
-          <SignatureDishText>
+          <_.SignatureDishText>
             Pork / Tenderloin / Green Pepper / Veggies
-          </SignatureDishText>
-          <SignatureDishOrder>Order now</SignatureDishOrder>
-        </SignatureDishDescription>
-        <SignatureDishImage data-aos="fade-down" />
+          </_.SignatureDishText>
+          <ButtonOrder>Order now</ButtonOrder>
+        </_.SignatureDishDescription>
+        <_.SignatureDishImage data-aos="fade-down" />
       </FlexContainer>
-    </SectionSignatureDish>
+    </_.SectionSignatureDish>
   );
 };
 

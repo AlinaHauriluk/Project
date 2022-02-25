@@ -1,7 +1,7 @@
 import React from "react";
 import DefaultLayout from "../../layout/defaultLayout";
 import Promo from "../../components/promo";
-import MenuDishes from "../../menu-dishes";
+import MenuDishes from "../../components/menu-dishes";
 
 const styles = {
   section: {

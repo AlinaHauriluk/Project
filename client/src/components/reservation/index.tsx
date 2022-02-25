@@ -11,7 +11,6 @@ import {
   InputTime,
   InputPerson,
 } from "../../box/form";
-import { BlockDescription } from "../../box/absolute-box";
 import { BlockSubTitle } from "../../text/text";
 
 type FormValues = {

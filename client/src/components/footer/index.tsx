@@ -1,14 +1,5 @@
 import React from "react";
-import {
-  FooterBlock,
-  FooterLogo,
-  FooterLogoTitle,
-  FooterLogoSubTitle,
-  FooterDescription,
-  FooterList,
-  FooterContactTitle,
-  FooterContactInfo,
-} from "./footer";
+import * as _ from "./footer";
 import { FlexContainerSpace, FlexStartColumn } from "../../box/flex-box";
 
 const contacts = [
@@ -19,27 +10,27 @@ const contacts = [
 
 const Footer = () => {
   return (
-    <FooterBlock>
+    <_.FooterBlock>
       <FlexContainerSpace>
-        <FooterLogo>
-          <FooterLogoTitle>The Venue</FooterLogoTitle>
-          <FooterLogoSubTitle>restaurant</FooterLogoSubTitle>
-        </FooterLogo>
-        <FooterDescription>
+        <_.FooterLogo>
+          <_.FooterLogoTitle>The Venue</_.FooterLogoTitle>
+          <_.FooterLogoSubTitle>restaurant</_.FooterLogoSubTitle>
+        </_.FooterLogo>
+        <_.FooterDescription>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
           malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut
           ac ligula sapien.
-        </FooterDescription>
+        </_.FooterDescription>
         <FlexStartColumn>
           {contacts.map((contact) => (
-            <FooterList key={contact.id}>
-              <FooterContactTitle>{contact.title}</FooterContactTitle>
-              <FooterContactInfo href={contact.info}>{contact.info}</FooterContactInfo>
-            </FooterList>
+            <_.FooterList key={contact.id}>
+              <_.FooterContactTitle>{contact.title}</_.FooterContactTitle>
+              <_.FooterContactInfo href={contact.info}>{contact.info}</_.FooterContactInfo>
+            </_.FooterList>
           ))}
         </FlexStartColumn>
       </FlexContainerSpace>
-    </FooterBlock>
+    </_.FooterBlock>
   );
 };
 

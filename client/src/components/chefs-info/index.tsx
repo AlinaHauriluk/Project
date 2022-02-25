@@ -1,12 +1,7 @@
 import React, { useEffect } from "react";
-import {
-  ChefsInfoWrapper,
-  ChefsInfoPhoto,
-  ChefsInfoName,
-  ChefsInfoPosition,
-} from "./chefs-info";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import * as _ from "./chefs-info"
 
 interface ChefsInfoProps {
   chefs: Array<{id: number; photo: string; name: string; position: string;}>;
@@ -20,11 +15,11 @@ const ChefsInfo: React.FC <ChefsInfoProps> = ({chefs}) => {
   return (
     <>
       {chefs.map(chef => (
-        <ChefsInfoWrapper data-aos="fade-down" key={chef.id}>
-          <ChefsInfoPhoto photo={chef.photo} />
-          <ChefsInfoName>{chef.name}</ChefsInfoName>
-          <ChefsInfoPosition>{chef.position}</ChefsInfoPosition>
-        </ChefsInfoWrapper>
+        <_.ChefsInfoWrapper data-aos="fade-down" key={chef.id}>
+          <_.ChefsInfoPhoto photo={chef.photo} />
+          <_.ChefsInfoName>{chef.name}</_.ChefsInfoName>
+          <_.ChefsInfoPosition>{chef.position}</_.ChefsInfoPosition>
+        </_.ChefsInfoWrapper>
       ))}
     </>
   );
