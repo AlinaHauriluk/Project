@@ -1,4 +1,4 @@
-import React from "react";
+import type {FC} from "react";
 import Promo from "../../components/promo";
 import NewExperience from "../../components/new-experience";
 import SignatureDish from "../../components/signature-dish";
@@ -11,7 +11,7 @@ const styles = {
   },
 };
 
-const Home = () => (
+const Home:FC = () => (
   <DefaultLayout>
     <Promo
       particle="is"

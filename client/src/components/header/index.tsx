@@ -1,7 +1,7 @@
-import React from "react";
+import type {FC} from "react";
 import Nav from "../nav";
 import { Container } from "../../box/absolute-box";
-import { Button } from "react-yandex-maps";
+import { Button } from "./header";
 import {
   HeaderSection,
   HeaderFlex,
@@ -11,25 +11,25 @@ import {
   ButtonSecondary,
 } from "./header";
 
-const Header = () => {
+const Header:FC = () => {
   return (
-    <_.HeaderSection>
+    <HeaderSection>
       <Container>
-        <_.HeaderFlex>
-          <_.FlipInX>
-            <_.LogoTitle>The Venue</_.LogoTitle>
-            <_.LogoSubtitle>restaurant</_.LogoSubtitle>
-          </_.FlipInX>
+        <HeaderFlex>
+          <FlipInX>
+            <LogoTitle>The Venue</LogoTitle>
+            <LogoSubtitle>restaurant</LogoSubtitle>
+          </FlipInX>
 
           <Nav />
 
           <div>
-            <_.Button>Log In</_.Button>
-            <_.ButtonSecondary>Sign Up</_.ButtonSecondary>
+            <Button>Log In</Button>
+            <ButtonSecondary>Sign Up</ButtonSecondary>
           </div>
-        </_.HeaderFlex>
+        </HeaderFlex>
       </Container>
-    </_.HeaderSection>
+    </HeaderSection>
   );
 };
 

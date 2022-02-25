@@ -1,4 +1,4 @@
-import React from "react";
+import type {FC} from "react";
 import { BlockTitle, BlockSubTitle } from "../../text/text";
 import { SomethingNewFlex, SomethingNewText } from "./something-new";
 
@@ -8,7 +8,7 @@ interface SomethingNewProps {
   descriptionPartTwo: string;
 }
 
-const SomethingNew: React.FC<SomethingNewProps> = ({
+const SomethingNew:FC<SomethingNewProps> = ({
   title,
   descriptionPartOne,
   descriptionPartTwo,

@@ -1,4 +1,4 @@
-import React from "react";
+import type {FC} from "react";
 import { useForm, Controller } from "react-hook-form";
 import { ReservationSection, ReservationTitle } from "./reservation";
 import { FlexColumnContainer, FlexCenter } from "../../box/flex-box";
@@ -19,7 +19,7 @@ type FormValues = {
   persons: string;
 };
 
-const Reservation = () => {
+const Reservation:FC = () => {
   const {
     control,
     register,
