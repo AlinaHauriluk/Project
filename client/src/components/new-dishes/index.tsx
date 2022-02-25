@@ -1,10 +1,19 @@
-import React, {useEffect} from "react";
-import * as _ from "./new-dishes";
+import React, { useEffect } from "react";
 import Rating from "../rating";
-import { Container, ButtonOrder} from "../../box/absolute-box";
+import { Container, ButtonOrder } from "../../box/absolute-box";
 import { BlockSubTitle } from "../../text/text";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import {
+  NewDishesSection,
+  NewDishesTitle,
+  NewDishesContainer,
+  NewDishesWrapper,
+  NewDishesName,
+  NewDishesPrice,
+  NewDishesDescription,
+  NewDishesPhoto,
+} from "./new-dishes";
 
 const newDishes = [
   {
@@ -42,30 +51,31 @@ const NewDishes = () => {
   }, []);
 
   return (
-    <_.NewDishesSection>
+    <NewDishesSection>
       <Container>
         <BlockSubTitle>Something new</BlockSubTitle>
-        <_.NewDishesTitle>Our Signature Dishes</_.NewDishesTitle>
+        <NewDishesTitle>Our Signature Dishes</NewDishesTitle>
         {newDishes.map((dish) => (
-          <_.NewDishesContainer key={dish.id}>
-            <_.NewDishesWrapper data-aos="fade-right">
-              <_.NewDishesName>{dish.title}
-                <_.NewDishesPrice>
+          <NewDishesContainer key={dish.id}>
+            <NewDishesWrapper data-aos="fade-right">
+              <NewDishesName>
+                {dish.title}
+                <NewDishesPrice>
                   {dish.price}
                   {dish.current}
-                </_.NewDishesPrice>
-              </_.NewDishesName>
-              <_.NewDishesDescription>{dish.description}</_.NewDishesDescription>
+                </NewDishesPrice>
+              </NewDishesName>
+              <NewDishesDescription>{dish.description}</NewDishesDescription>
               <ButtonOrder>Order now</ButtonOrder>
-            </_.NewDishesWrapper>
-            <_.NewDishesWrapper data-aos="fade-left">
-              <_.NewDishesPhoto photo={dish.photo} />
+            </NewDishesWrapper>
+            <NewDishesWrapper data-aos="fade-left">
+              <NewDishesPhoto photo={dish.photo} />
               <Rating rating={dish.rating} />
-            </_.NewDishesWrapper>
-          </_.NewDishesContainer>
+            </NewDishesWrapper>
+          </NewDishesContainer>
         ))}
       </Container>
-    </_.NewDishesSection>
+    </NewDishesSection>
   );
 };
 

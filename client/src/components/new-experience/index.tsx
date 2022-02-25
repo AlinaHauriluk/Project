@@ -1,9 +1,16 @@
 import React, { useEffect } from "react";
 import { FlexContainer, Flex } from "../../box/flex-box";
-import * as _ from "./new-experience";
 import { BlockSubTitle, BlockTitle } from "../../text/text";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import {
+  SectionNewExperience,
+  NewExperienceImage,
+  NewExperienceImageTwo,
+  NewExperienceDescription,
+  NewExperienceIcon,
+  NewExperienceText,
+} from "./new-experience";
 
 const NewExperience = () => {
   useEffect(() => {
@@ -11,28 +18,28 @@ const NewExperience = () => {
   }, []);
 
   return (
-    <_.SectionNewExperience>
+    <SectionNewExperience>
       <FlexContainer data-aos="fade-down">
         <Flex>
-          <_.NewExperienceImage />
-          <_.NewExperienceImageTwo />
+          <NewExperienceImage />
+          <NewExperienceImageTwo />
         </Flex>
 
-        <_.NewExperienceDescription data-aos="fade-left">
+        <NewExperienceDescription data-aos="fade-left">
           <BlockSubTitle>Something new</BlockSubTitle>
           <BlockTitle>An Extraordinery Experience</BlockTitle>
-          <_.NewExperienceIcon />
-          <_.NewExperienceText>
+          <NewExperienceIcon />
+          <NewExperienceText>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
             malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum.
             Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Ut non
             justo eleifend, facilisis nibh ut, interdum odio. Suspendisse
             potenti. Vivamus luctus diam eu neque rutrum, vitae aliquet dolor
             venenatis. Nulla consequat fringilla massa.
-          </_.NewExperienceText>
-        </_.NewExperienceDescription>
+          </NewExperienceText>
+        </NewExperienceDescription>
       </FlexContainer>
-    </_.SectionNewExperience>
+    </SectionNewExperience>
   );
 };
 

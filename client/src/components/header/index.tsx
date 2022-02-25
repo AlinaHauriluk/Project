@@ -1,27 +1,35 @@
 import React from "react";
 import Nav from "../nav";
 import { Container } from "../../box/absolute-box";
-import * as _ from "./header";
+import { Button } from "react-yandex-maps";
+import {
+  HeaderSection,
+  HeaderFlex,
+  FlipInX,
+  LogoTitle,
+  LogoSubtitle,
+  ButtonSecondary,
+} from "./header";
 
 const Header = () => {
   return (
-    <_.HeaderSection>
+    <HeaderSection>
       <Container>
-        <_.HeaderFlex>
-          <_.FlipInX>
-            <_.LogoTitle>The Venue</_.LogoTitle>
-            <_.LogoSubtitle>restaurant</_.LogoSubtitle>
-          </_.FlipInX>
+        <HeaderFlex>
+          <FlipInX>
+            <LogoTitle>The Venue</LogoTitle>
+            <LogoSubtitle>restaurant</LogoSubtitle>
+          </FlipInX>
 
           <Nav />
 
           <div>
-            <_.Button>Log In</_.Button>
-            <_.ButtonSecondary>Sign Up</_.ButtonSecondary>
+            <Button>Log In</Button>
+            <ButtonSecondary>Sign Up</ButtonSecondary>
           </div>
-        </_.HeaderFlex>
+        </HeaderFlex>
       </Container>
-    </_.HeaderSection>
+    </HeaderSection>
   );
 };
 

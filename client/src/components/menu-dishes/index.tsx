@@ -1,9 +1,13 @@
 import React, { useEffect } from "react";
-import * as _ from "./menu-dishes";
 import { Container } from "../../box/absolute-box";
 import SomethingNew from "../../components/something-new";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import {
+  MenuDishesSection,
+  MenuDishesContainer,
+  MenuDishesPhoto,
+} from "./menu-dishes";
 
 const dishesPhoto = [
   { id: 1, photo: `url(${require("../../assets/menuDishesStarters.jpg")})` },
@@ -17,24 +21,24 @@ const MenuDishes = () => {
   }, []);
 
   return (
-    <_.MenuDishesSection>
+    <MenuDishesSection>
       <Container>
         <SomethingNew
           title="Discover Our Menu"
           descriptionPartOne="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Ut non justo eleifend, facilisis nibh ut, interdum odio. Suspendisse potenti. Vivamus luctus diam eu neque rutrum, vitae aliquet dolor venenatis. Nulla consequat fringilla."
           descriptionPartTwo="Sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Ut non justo eleifend, facilisis nibh ut, interdum odio. Suspendisse potenti. Vivamus luctus diam eu neque rutrum, vitae aliquet dolor venenatis. Nulla consequat fringilla."
         />
-        <_.MenuDishesContainer>
-          {dishesPhoto.map(dish => (
-            <_.MenuDishesPhoto
+        <MenuDishesContainer>
+          {dishesPhoto.map((dish) => (
+            <MenuDishesPhoto
               key={dish.id}
               photo={dish.photo}
               data-aos="zoom-in"
             />
           ))}
-        </_.MenuDishesContainer>
+        </MenuDishesContainer>
       </Container>
-    </_.MenuDishesSection>
+    </MenuDishesSection>
   );
 };
 

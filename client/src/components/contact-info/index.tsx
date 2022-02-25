@@ -1,8 +1,17 @@
 import React from "react";
-import * as _  from "./contact-info";
 import { Container } from "../../box/absolute-box";
 import { BlockSubTitle, BlockTitle } from "../../text/text";
 import { FlexSpaceBetween, FlexStartColumn } from "../../box/flex-box";
+import {
+  ContactInfoSection,
+  ContactInfoWrapperLeft,
+  ContactInfoText,
+  ContactInfoSubtitleLogo,
+  ContactInfoWrapperRight,
+  ContactInfoContainer,
+  ContactInfoTitle,
+  ContactInfoDescription,
+} from "./contact-info";
 
 const contacts = [
   { id: 1, title: "Address:", info: "481 Creekside Lane Avila CA" },
@@ -12,34 +21,36 @@ const contacts = [
 
 const ContactInfo = () => {
   return (
-    <_.ContactInfoSection>
+    <ContactInfoSection>
       <Container>
         <BlockSubTitle>Contact Info</BlockSubTitle>
         <FlexSpaceBetween>
-          <_.ContactInfoWrapperLeft>
-            <_.ContactInfoText>
+          <ContactInfoWrapperLeft>
+            <ContactInfoText>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
               malesuada lorem maximus mauris scelerisque, at rutrum nulla
               dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.
               Ut non justo eleifend, facilisis nibh ut, interdum odio.
               Suspendisse potenti.
-            </_.ContactInfoText>
+            </ContactInfoText>
             <BlockTitle>The Venue</BlockTitle>
-            <_.ContactInfoSubtitleLogo>restaurant</_.ContactInfoSubtitleLogo>
-          </_.ContactInfoWrapperLeft>
-          <_.ContactInfoWrapperRight>
+            <ContactInfoSubtitleLogo>restaurant</ContactInfoSubtitleLogo>
+          </ContactInfoWrapperLeft>
+          <ContactInfoWrapperRight>
             <FlexStartColumn>
-              {contacts.map(contact =>
-                <_.ContactInfoContainer key={contact.id}>
-                  <_.ContactInfoTitle>{contact.title}</_.ContactInfoTitle>
-                  <_.ContactInfoDescription href={contact.info}>{contact.info}</_.ContactInfoDescription>
-                </_.ContactInfoContainer>
-              )}
+              {contacts.map((contact) => (
+                <ContactInfoContainer key={contact.id}>
+                  <ContactInfoTitle>{contact.title}</ContactInfoTitle>
+                  <ContactInfoDescription href={contact.info}>
+                    {contact.info}
+                  </ContactInfoDescription>
+                </ContactInfoContainer>
+              ))}
             </FlexStartColumn>
-          </_.ContactInfoWrapperRight>
+          </ContactInfoWrapperRight>
         </FlexSpaceBetween>
       </Container>
-    </_.ContactInfoSection>
+    </ContactInfoSection>
   );
 };
 
