@@ -13,23 +13,23 @@ import {
 
 const Header = () => {
   return (
-    <HeaderSection>
+    <_.HeaderSection>
       <Container>
-        <HeaderFlex>
-          <FlipInX>
-            <LogoTitle>The Venue</LogoTitle>
-            <LogoSubtitle>restaurant</LogoSubtitle>
-          </FlipInX>
+        <_.HeaderFlex>
+          <_.FlipInX>
+            <_.LogoTitle>The Venue</_.LogoTitle>
+            <_.LogoSubtitle>restaurant</_.LogoSubtitle>
+          </_.FlipInX>
 
           <Nav />
 
           <div>
-            <Button>Log In</Button>
-            <ButtonSecondary>Sign Up</ButtonSecondary>
+            <_.Button>Log In</_.Button>
+            <_.ButtonSecondary>Sign Up</_.ButtonSecondary>
           </div>
-        </HeaderFlex>
+        </_.HeaderFlex>
       </Container>
-    </HeaderSection>
+    </_.HeaderSection>
   );
 };
 

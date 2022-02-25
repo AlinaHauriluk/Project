@@ -11,6 +11,7 @@ import {
   FooterContactInfo,
 } from "./footer";
 
+
 const contacts = [
   { id: 1, title: "Address:", info: "481 Creekside Lane Avila CA" },
   { id: 2, title: "Phone:", info: "+53 345 7953 32453" },
@@ -19,17 +20,17 @@ const contacts = [
 
 const Footer = () => {
   return (
-    <FooterBlock>
+    <_.FooterBlock>
       <FlexContainerSpace>
-        <FooterLogo>
-          <FooterLogoTitle>The Venue</FooterLogoTitle>
-          <FooterLogoSubTitle>restaurant</FooterLogoSubTitle>
-        </FooterLogo>
-        <FooterDescription>
+        <_.FooterLogo>
+          <_.FooterLogoTitle>The Venue</_.FooterLogoTitle>
+          <_.FooterLogoSubTitle>restaurant</_.FooterLogoSubTitle>
+        </_.FooterLogo>
+        <_.FooterDescription>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
           malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut
           ac ligula sapien.
-        </FooterDescription>
+        </_.FooterDescription>
         <FlexStartColumn>
           {contacts.map((contact) => (
             <FooterList key={contact.id}>
@@ -41,7 +42,7 @@ const Footer = () => {
           ))}
         </FlexStartColumn>
       </FlexContainerSpace>
-    </FooterBlock>
+    </_.FooterBlock>
   );
 };
 

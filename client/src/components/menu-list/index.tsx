@@ -73,22 +73,22 @@ const MenuList: React.FC<MenuProps> = ({ title, subtitle }) => {
   }, []);
 
   return (
-    <MenuContainer>
+    <_.MenuContainer>
       <Container>
         {title && subtitle && (
-          <MenuWrapper data-aos="flip-down">
-            <MenuWrapperTitle>
+          <_.MenuWrapper data-aos="flip-down">
+            <_.MenuWrapperTitle>
               <BlockSubTitle>{subtitle}</BlockSubTitle>
               <Rating rating={1} />
-              <MenuTitle>{title}</MenuTitle>
-            </MenuWrapperTitle>
-          </MenuWrapper>
+              <_.MenuTitle>{title}</_.MenuTitle>
+            </_.MenuWrapperTitle>
+          </_.MenuWrapper>
         )}
 
         <FlexJustifyCenter>
           {data.map((item) => (
-            <MenuPart key={item.id} data-aos="fade-down">
-              <MenuPartTitle>{item.title}</MenuPartTitle>
+            <_.MenuPart key={item.id} data-aos="fade-down">
+              <_.MenuPartTitle>{item.title}</_.MenuPartTitle>
               {item.dishes.map((i) => (
                 <MenuListContainer key={i.id}>
                   <MenuListWrapper>
@@ -101,11 +101,11 @@ const MenuList: React.FC<MenuProps> = ({ title, subtitle }) => {
                   <DishOrder>Order now</DishOrder>
                 </MenuListContainer>
               ))}
-            </MenuPart>
+            </_.MenuPart>
           ))}
         </FlexJustifyCenter>
       </Container>
-    </MenuContainer>
+    </_.MenuContainer>
   );
 };
 

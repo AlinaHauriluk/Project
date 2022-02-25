@@ -4,15 +4,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import TinySlider from "tiny-slider-react";
 import "tiny-slider/dist/tiny-slider.css";
-import {
-  TestimonialsSection,
-  TestimonialsSubTitle,
-  TestimonialsTitle,
-  TestimonialsQuote,
-  TestimonialsText,
-  TestimonialsClientName,
-  TestimonialsClient,
-} from "./testimonials";
 
 const dataTestimonials = [
   {
@@ -51,26 +42,26 @@ const Testimonials = () => {
   };
 
   return (
-    <TestimonialsSection>
+    <_.TestimonialsSection>
       <Container>
-        <TestimonialsSubTitle>What they say</TestimonialsSubTitle>
-        <TestimonialsTitle data-aos="flip-down">Testimonials</TestimonialsTitle>
-        <TestimonialsQuote />
+        <_.TestimonialsSubTitle>What they say</_.TestimonialsSubTitle>
+        <_.TestimonialsTitle data-aos="flip-down">Testimonials</_.TestimonialsTitle>
+        <_.TestimonialsQuote />
         <TinySlider settings={settings}>
           {dataTestimonials.map((testimonial) => (
             <div key={testimonial.id}>
               <TestimonialsText>{testimonial.text}</TestimonialsText>
               <TestimonialsClientName>
                 {testimonial.name}
-                <TestimonialsClient>
+                <_.TestimonialsClient>
                   {testimonial.occupation}
-                </TestimonialsClient>
-              </TestimonialsClientName>
+                </_.TestimonialsClient>
+              </_.TestimonialsClientName>
             </div>
           ))}
         </TinySlider>
       </Container>
-    </TestimonialsSection>
+    </_.TestimonialsSection>
   );
 };
 

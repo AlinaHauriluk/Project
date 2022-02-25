@@ -18,7 +18,7 @@ const Promo: React.FC<PromoProps> = ({
   style,
 }) => {
   return (
-    <PromoSection
+    <_.PromoSection
       style={{
         height: "560px",
         ...(style || {}),
@@ -26,12 +26,12 @@ const Promo: React.FC<PromoProps> = ({
     >
       <Container>
         <FlexColumn>
-          <SubTitlePromo>The Venue {particle}</SubTitlePromo>
-          <TitlePromo>{title}</TitlePromo>
-          {description && <Paragraph>{description}</Paragraph>}
+          <_.SubTitlePromo>The Venue {particle}</_.SubTitlePromo>
+          <_.TitlePromo>{title}</_.TitlePromo>
+          {description && <_.Paragraph>{description}</_.Paragraph>}
         </FlexColumn>
       </Container>
-    </PromoSection>
+    </_.PromoSection>
   );
 };
 
