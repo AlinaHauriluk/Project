@@ -1,13 +1,5 @@
 import React, { useEffect } from "react";
-import {
-  TestimonialsSection,
-  TestimonialsSubTitle,
-  TestimonialsTitle,
-  TestimonialsQuote,
-  TestimonialsText,
-  TestimonialsClientName,
-  TestimonialsClient,
-} from "./testimonials";
+import * as _ from "./testimonials";
 import { Container } from "../../box/absolute-box";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -51,26 +43,26 @@ const Testimonials = () => {
   };
 
   return (
-    <TestimonialsSection>
+    <_.TestimonialsSection>
       <Container>
-        <TestimonialsSubTitle>What they say</TestimonialsSubTitle>
-        <TestimonialsTitle data-aos="flip-down">Testimonials</TestimonialsTitle>
-        <TestimonialsQuote />
+        <_.TestimonialsSubTitle>What they say</_.TestimonialsSubTitle>
+        <_.TestimonialsTitle data-aos="flip-down">Testimonials</_.TestimonialsTitle>
+        <_.TestimonialsQuote />
         <TinySlider settings={settings}>
           {dataTestimonials.map(testimonial => (
             <div key={testimonial.id}>
-              <TestimonialsText>{testimonial.text}</TestimonialsText>
-              <TestimonialsClientName> 
+              <_.TestimonialsText>{testimonial.text}</_.TestimonialsText>
+              <_.TestimonialsClientName> 
                 {testimonial.name}
-                <TestimonialsClient>
+                <_.TestimonialsClient>
                   {testimonial.occupation}
-                </TestimonialsClient>
-              </TestimonialsClientName>
+                </_.TestimonialsClient>
+              </_.TestimonialsClientName>
             </div>
           ))}
         </TinySlider>
       </Container>
-    </TestimonialsSection>
+    </_.TestimonialsSection>
   );
 };
 

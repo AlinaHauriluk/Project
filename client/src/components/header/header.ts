@@ -50,3 +50,5 @@ export const ButtonSecondary = styled(Button)`
 export const FlipInX = styled.div`
   animation: 8s ${keyframes`${flipInX}`} infinite;
 `;
+
+

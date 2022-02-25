@@ -3,7 +3,7 @@ import Promo from "../../components/promo";
 import NewExperience from "../../components/new-experience";
 import SignatureDish from "../../components/signature-dish";
 import DefaultLayout from "../../layout/defaultLayout";
-import Menu from "../../components/menu-list";
+import MenuList from "../../components/menu-list";
 
 const styles = {
   section: {
@@ -24,7 +24,7 @@ const Home = () => (
 
     <SignatureDish />
 
-    <Menu title="The Menu" subtitle="5 Stars" />
+    <MenuList title="The Menu" subtitle="5 Stars" />
   </DefaultLayout>
 );
 

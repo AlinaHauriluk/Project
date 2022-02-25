@@ -51,7 +51,7 @@ export const MenuPartTitle = styled(FlexCenter)`
   animation: 6s ${keyframes`${pulse}`} infinite;
 `;
 
-export const MenuList = styled.div`
+export const MenuListContainer = styled.div`
   margin-bottom: 20px;
 `;
 

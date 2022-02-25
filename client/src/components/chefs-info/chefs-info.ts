@@ -26,3 +26,4 @@ export const ChefsInfoPosition = styled.h4`
   line-height: 1.2;
   margin-top: 6px;
 `;
+
