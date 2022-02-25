@@ -1,8 +1,8 @@
 import React from "react";
-import * as _ from "./promo";
 import { Container } from "../../box/absolute-box";
 import { FlexColumn } from "../../box/flex-box";
 import { CSSProperties } from "styled-components";
+import { PromoSection, SubTitlePromo, TitlePromo, Paragraph } from "./promo";
 
 interface PromoProps {
   title: string;
@@ -20,8 +20,8 @@ const Promo: React.FC<PromoProps> = ({
   return (
     <_.PromoSection
       style={{
-        height: '560px',
-        ...(style || {})
+        height: "560px",
+        ...(style || {}),
       }}
     >
       <Container>
@@ -36,4 +36,3 @@ const Promo: React.FC<PromoProps> = ({
 };
 
 export default Promo;
-

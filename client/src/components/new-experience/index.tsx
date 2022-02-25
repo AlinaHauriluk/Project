@@ -1,9 +1,16 @@
 import React, { useEffect } from "react";
 import { FlexContainer, Flex } from "../../box/flex-box";
-import * as _ from "./new-experience";
 import { BlockSubTitle, BlockTitle } from "../../text/text";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import {
+  SectionNewExperience,
+  NewExperienceImage,
+  NewExperienceImageTwo,
+  NewExperienceDescription,
+  NewExperienceIcon,
+  NewExperienceText,
+} from "./new-experience";
 
 const NewExperience = () => {
   useEffect(() => {

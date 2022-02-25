@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import * as _ from "./signature-dish";
 import { FlexContainer, FlexSpaceBetween } from "../../box/flex-box";
 import { BlockTitle, BlockSubTitle } from "../../text/text";
 import { ButtonOrder } from "../../box/absolute-box";
@@ -28,10 +27,10 @@ const SignatureDish = () => {
 
           <_.SignatureDishText>
             Pork / Tenderloin / Green Pepper / Veggies
-          </_.SignatureDishText>
+          </SignatureDishText>
           <ButtonOrder>Order now</ButtonOrder>
-        </_.SignatureDishDescription>
-        <_.SignatureDishImage data-aos="fade-down" />
+        </SignatureDishDescription>
+        <SignatureDishImage data-aos="fade-down" />
       </FlexContainer>
     </_.SectionSignatureDish>
   );

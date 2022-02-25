@@ -1,7 +1,15 @@
 import React from "react";
 import Nav from "../nav";
 import { Container } from "../../box/absolute-box";
-import * as _ from "./header";
+import { Button } from "react-yandex-maps";
+import {
+  HeaderSection,
+  HeaderFlex,
+  FlipInX,
+  LogoTitle,
+  LogoSubtitle,
+  ButtonSecondary,
+} from "./header";
 
 const Header = () => {
   return (

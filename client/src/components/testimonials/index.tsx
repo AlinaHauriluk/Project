@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import * as _ from "./testimonials";
 import { Container } from "../../box/absolute-box";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -49,10 +48,10 @@ const Testimonials = () => {
         <_.TestimonialsTitle data-aos="flip-down">Testimonials</_.TestimonialsTitle>
         <_.TestimonialsQuote />
         <TinySlider settings={settings}>
-          {dataTestimonials.map(testimonial => (
+          {dataTestimonials.map((testimonial) => (
             <div key={testimonial.id}>
-              <_.TestimonialsText>{testimonial.text}</_.TestimonialsText>
-              <_.TestimonialsClientName> 
+              <TestimonialsText>{testimonial.text}</TestimonialsText>
+              <TestimonialsClientName>
                 {testimonial.name}
                 <_.TestimonialsClient>
                   {testimonial.occupation}

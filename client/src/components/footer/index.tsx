@@ -1,6 +1,16 @@
 import React from "react";
-import * as _ from "./footer";
 import { FlexContainerSpace, FlexStartColumn } from "../../box/flex-box";
+import {
+  FooterBlock,
+  FooterLogo,
+  FooterLogoTitle,
+  FooterLogoSubTitle,
+  FooterDescription,
+  FooterList,
+  FooterContactTitle,
+  FooterContactInfo,
+} from "./footer";
+
 
 const contacts = [
   { id: 1, title: "Address:", info: "481 Creekside Lane Avila CA" },
@@ -23,10 +33,12 @@ const Footer = () => {
         </_.FooterDescription>
         <FlexStartColumn>
           {contacts.map((contact) => (
-            <_.FooterList key={contact.id}>
-              <_.FooterContactTitle>{contact.title}</_.FooterContactTitle>
-              <_.FooterContactInfo href={contact.info}>{contact.info}</_.FooterContactInfo>
-            </_.FooterList>
+            <FooterList key={contact.id}>
+              <FooterContactTitle>{contact.title}</FooterContactTitle>
+              <FooterContactInfo href={contact.info}>
+                {contact.info}
+              </FooterContactInfo>
+            </FooterList>
           ))}
         </FlexStartColumn>
       </FlexContainerSpace>
