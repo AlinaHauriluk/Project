@@ -1,35 +1,27 @@
 import React from "react";
 import Nav from "../nav";
 import { Container } from "../../box/absolute-box";
-import {
-  ButtonSecondary,
-  HeaderSection,
-  LogoTitle,
-  LogoSubtitle,
-  HeaderFlex,
-  Button,
-  FlipInX,
-} from "./header";
+import * as _ from "./header";
 
 const Header = () => {
   return (
-    <HeaderSection>
+    <_.HeaderSection>
       <Container>
-        <HeaderFlex>
-          <FlipInX>
-            <LogoTitle>The Venue</LogoTitle>
-            <LogoSubtitle>restaurant</LogoSubtitle>
-          </FlipInX>
+        <_.HeaderFlex>
+          <_.FlipInX>
+            <_.LogoTitle>The Venue</_.LogoTitle>
+            <_.LogoSubtitle>restaurant</_.LogoSubtitle>
+          </_.FlipInX>
 
           <Nav />
 
           <div>
-            <Button>Log In</Button>
-            <ButtonSecondary>Sign Up</ButtonSecondary>
+            <_.Button>Log In</_.Button>
+            <_.ButtonSecondary>Sign Up</_.ButtonSecondary>
           </div>
-        </HeaderFlex>
+        </_.HeaderFlex>
       </Container>
-    </HeaderSection>
+    </_.HeaderSection>
   );
 };
 
