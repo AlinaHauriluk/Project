@@ -1,5 +1,4 @@
-import styled, { keyframes } from "styled-components";
-import { pulse } from "react-animations";
+import styled from "styled-components";
 import { SectionContainer, BlockDescription } from "../../box/absolute-box";
 
 export const SectionSignatureDish = styled(SectionContainer)`
@@ -33,20 +32,4 @@ export const SignatureDishText = styled.p`
   margin-bottom: 40px;
   font-weight: 600;
   color: ${({ theme }) => theme.colors.colorText};
-`;
-export const SignatureDishOrder = styled.button`
-  display: inline-block;
-  padding: 10px 20px;
-  letter-spacing: 1.6px;
-  font-weight: 400;
-  cursor: pointer;
-  color: ${({ theme }) => theme.colors.secondary};
-  font-size: ${({ theme }) => theme.fontSize.mediumMedium};
-  border: 2px solid ${({ theme }) => theme.colors.secondary};
-
-  :hover {
-    color: ${({ theme }) => theme.colors.primary};
-    background-color: ${({ theme }) => theme.colors.secondary};
-    animation: 3s ${keyframes`${pulse}`} infinite;
-  }
 `;

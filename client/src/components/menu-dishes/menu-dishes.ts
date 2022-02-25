@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { FlexSpaceBetween } from "../box/flex-box"
+import { FlexSpaceBetween } from "../../box/flex-box"
 
 export const MenuDishesSection = styled.div`
   background-color: ${({theme}) => theme.colors.backgroundSection};
