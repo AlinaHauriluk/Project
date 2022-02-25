@@ -1,7 +1,7 @@
-import React from "react";
+import type {FC} from "react";
 import DefaultLayout from "../../layout/defaultLayout";
 
-const Profile = () => (
+const Profile:FC = () => (
   <DefaultLayout>
     <div>Profile</div>
   </DefaultLayout>

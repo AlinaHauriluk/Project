@@ -1,9 +1,19 @@
-import React, { useEffect } from "react";
+import type {FC} from "react";
+import { useEffect } from "react";
 import { Container } from "../../box/absolute-box";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import TinySlider from "tiny-slider-react";
 import "tiny-slider/dist/tiny-slider.css";
+import {
+  TestimonialsSection,
+  TestimonialsSubTitle,
+  TestimonialsTitle,
+  TestimonialsQuote,
+  TestimonialsText,
+  TestimonialsClientName,
+  TestimonialsClient,
+} from "./testimonials";
 
 const dataTestimonials = [
   {
@@ -26,7 +36,7 @@ const dataTestimonials = [
   },
 ];
 
-const Testimonials = () => {
+const Testimonials:FC = () => {
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
@@ -42,26 +52,26 @@ const Testimonials = () => {
   };
 
   return (
-    <_.TestimonialsSection>
+    <TestimonialsSection>
       <Container>
-        <_.TestimonialsSubTitle>What they say</_.TestimonialsSubTitle>
-        <_.TestimonialsTitle data-aos="flip-down">Testimonials</_.TestimonialsTitle>
-        <_.TestimonialsQuote />
+        <TestimonialsSubTitle>What they say</TestimonialsSubTitle>
+        <TestimonialsTitle data-aos="flip-down">Testimonials</TestimonialsTitle>
+        <TestimonialsQuote />
         <TinySlider settings={settings}>
           {dataTestimonials.map((testimonial) => (
             <div key={testimonial.id}>
               <TestimonialsText>{testimonial.text}</TestimonialsText>
               <TestimonialsClientName>
                 {testimonial.name}
-                <_.TestimonialsClient>
+                <TestimonialsClient>
                   {testimonial.occupation}
-                </_.TestimonialsClient>
-              </_.TestimonialsClientName>
+                </TestimonialsClient>
+              </TestimonialsClientName>
             </div>
           ))}
         </TinySlider>
       </Container>
-    </_.TestimonialsSection>
+    </TestimonialsSection>
   );
 };
 

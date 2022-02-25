@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import type {FC} from "react";
+import { useEffect } from "react";
 import { Container } from "../../box/absolute-box";
 import { BlockSubTitle } from "../../text/text";
 import { FlexJustifyCenter } from "../../box/flex-box";
@@ -67,45 +68,45 @@ const data = [
   },
 ];
 
-const MenuList: React.FC<MenuProps> = ({ title, subtitle }) => {
+const MenuList:FC<MenuProps> = ({ title, subtitle }) => {
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
 
   return (
-    <_.MenuContainer>
+    <MenuContainer>
       <Container>
         {title && subtitle && (
-          <_.MenuWrapper data-aos="flip-down">
-            <_.MenuWrapperTitle>
+          <MenuWrapper data-aos="flip-down">
+            <MenuWrapperTitle>
               <BlockSubTitle>{subtitle}</BlockSubTitle>
               <Rating rating={1} />
-              <_.MenuTitle>{title}</_.MenuTitle>
-            </_.MenuWrapperTitle>
-          </_.MenuWrapper>
+              <MenuTitle>{title}</MenuTitle>
+            </MenuWrapperTitle>
+          </MenuWrapper>
         )}
 
         <FlexJustifyCenter>
           {data.map((item) => (
-            <_.MenuPart key={item.id} data-aos="fade-down">
-              <_.MenuPartTitle>{item.title}</_.MenuPartTitle>
-              {item.dishes.map((i) => (
-                <MenuListContainer key={i.id}>
+            <MenuPart key={item.id} data-aos="fade-down">
+              <MenuPartTitle>{item.title}</MenuPartTitle>
+              {item.dishes.map((dish) => (
+                <MenuListContainer key={dish.id}>
                   <MenuListWrapper>
-                    <DishName>{i.name}</DishName>
+                    <DishName>{dish.name}</DishName>
                     <DishPrice>
-                      {i.price} {i.currency}
+                      {dish.price} {dish.currency}
                     </DishPrice>
                   </MenuListWrapper>
-                  <DishDescription>{i.description}</DishDescription>
+                  <DishDescription>{dish.description}</DishDescription>
                   <DishOrder>Order now</DishOrder>
                 </MenuListContainer>
               ))}
-            </_.MenuPart>
+            </MenuPart>
           ))}
         </FlexJustifyCenter>
       </Container>
-    </_.MenuContainer>
+    </MenuContainer>
   );
 };
 

@@ -1,4 +1,4 @@
-import React from "react";
+import type {FC} from "react";
 import { FlexContainerSpace, FlexStartColumn } from "../../box/flex-box";
 import {
   FooterBlock,
@@ -18,19 +18,19 @@ const contacts = [
   { id: 3, title: "Email:", info: "yourmail@gmail" },
 ];
 
-const Footer = () => {
+const Footer:FC = () => {
   return (
-    <_.FooterBlock>
+    <FooterBlock>
       <FlexContainerSpace>
-        <_.FooterLogo>
-          <_.FooterLogoTitle>The Venue</_.FooterLogoTitle>
-          <_.FooterLogoSubTitle>restaurant</_.FooterLogoSubTitle>
-        </_.FooterLogo>
-        <_.FooterDescription>
+        <FooterLogo>
+          <FooterLogoTitle>The Venue</FooterLogoTitle>
+          <FooterLogoSubTitle>restaurant</FooterLogoSubTitle>
+        </FooterLogo>
+        <FooterDescription>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
           malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut
           ac ligula sapien.
-        </_.FooterDescription>
+        </FooterDescription>
         <FlexStartColumn>
           {contacts.map((contact) => (
             <FooterList key={contact.id}>
@@ -42,7 +42,7 @@ const Footer = () => {
           ))}
         </FlexStartColumn>
       </FlexContainerSpace>
-    </_.FooterBlock>
+    </FooterBlock>
   );
 };
 

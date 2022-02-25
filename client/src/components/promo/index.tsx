@@ -1,4 +1,4 @@
-import React from "react";
+import type {FC} from "react";
 import { Container } from "../../box/absolute-box";
 import { FlexColumn } from "../../box/flex-box";
 import { CSSProperties } from "styled-components";
@@ -11,14 +11,14 @@ interface PromoProps {
   style?: CSSProperties;
 }
 
-const Promo: React.FC<PromoProps> = ({
+const Promo:FC<PromoProps> = ({
   title,
   description,
   particle,
   style,
 }) => {
   return (
-    <_.PromoSection
+    <PromoSection
       style={{
         height: "560px",
         ...(style || {}),
@@ -26,12 +26,12 @@ const Promo: React.FC<PromoProps> = ({
     >
       <Container>
         <FlexColumn>
-          <_.SubTitlePromo>The Venue {particle}</_.SubTitlePromo>
-          <_.TitlePromo>{title}</_.TitlePromo>
-          {description && <_.Paragraph>{description}</_.Paragraph>}
+          <SubTitlePromo>The Venue {particle}</SubTitlePromo>
+          <TitlePromo>{title}</TitlePromo>
+          {description && <Paragraph>{description}</Paragraph>}
         </FlexColumn>
       </Container>
-    </_.PromoSection>
+    </PromoSection>
   );
 };
 

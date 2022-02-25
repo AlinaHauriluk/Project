@@ -1,8 +1,7 @@
-import React from "react";
+import type {FC} from "react";
 import DefaultLayout from "../../layout/defaultLayout";
 
-
-const Cart = () => (
+const Cart:FC = () => (
   <DefaultLayout>
     <div>Cart</div>
   </DefaultLayout>

@@ -1,4 +1,4 @@
-import React from "react";
+import type {FC} from "react";
 import DefaultLayout from "../../layout/defaultLayout";
 import Promo from "../../components/promo";
 import MenuDishes from "../../components/menu-dishes";
@@ -13,7 +13,7 @@ const styles = {
   }
 }
 
-const Menu = () => (
+const Menu:FC = () => (
   <DefaultLayout>
     <Promo title="Our Menu" style={styles.section} />
     <MenuDishes />

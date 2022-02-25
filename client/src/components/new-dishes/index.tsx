@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import type {FC} from "react";
+import { useEffect } from "react";
 import Rating from "../rating";
 import { Container, ButtonOrder } from "../../box/absolute-box";
 import { BlockSubTitle } from "../../text/text";
@@ -45,7 +46,7 @@ const newDishes = [
   },
 ];
 
-const NewDishes = () => {
+const NewDishes:FC = () => {
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);

@@ -1,4 +1,4 @@
-import React from "react";
+import type {FC} from "react";
 import { Container } from "../../box/absolute-box";
 import { BlockSubTitle, BlockTitle } from "../../text/text";
 import { FlexSpaceBetween, FlexStartColumn } from "../../box/flex-box";
@@ -19,7 +19,7 @@ const contacts = [
   { id: 3, title: "Email:", info: "yourmail@gmail" },
 ];
 
-const ContactInfo = () => {
+const ContactInfo:FC = () => {
   return (
     <ContactInfoSection>
       <Container>

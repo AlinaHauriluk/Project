@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import type {FC} from "react";
+import { useEffect } from "react";
 import { Container } from "../../box/absolute-box";
 import SomethingNew from "../../components/something-new";
 import AOS from "aos";
@@ -15,7 +16,7 @@ const dishesPhoto = [
   { id: 3, photo: `url(${require("../../assets/menuDishesDeserts.jpg")})` },
 ];
 
-const MenuDishes = () => {
+const MenuDishes:FC = () => {
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);

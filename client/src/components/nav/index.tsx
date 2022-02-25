@@ -1,7 +1,7 @@
-import React from "react";
+import type {FC} from "react";
 import { List, ListItem, PageLink } from "./nav";
 
-const Nav = () => {
+const Nav:FC = () => {
   return (
     <List>
       <ListItem>
