@@ -1,4 +1,3 @@
-import type { FC } from "react";
 import DefaultLayout from "../../layout/defaultLayout";
 import Promo from "../../components/promo";
 import CartList from "../../components/cart-list";
@@ -11,7 +10,7 @@ const styles = {
   },
 };
 
-const Cart: FC = () => (
+const Cart = () => (
   <DefaultLayout>
     <Promo title="Your Cart" style={styles.section} />
     <CartList />

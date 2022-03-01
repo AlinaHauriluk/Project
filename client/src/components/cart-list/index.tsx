@@ -1,4 +1,3 @@
-import type { FC } from "react";
 import { useState } from "react";
 import { Container } from "../../box/absolute-box";
 import {
@@ -12,9 +11,9 @@ import {
   CloseButton,
   CartListButton,
   Total,
-  TotalPrice
+  TotalPrice,
 } from "./cart-list";
-import {FlexColumn} from "../../box/flex-box";
+import { FlexColumn } from "../../box/flex-box";
 import CartBodyProduct from "../cart-body-product";
 import CartHead from "../cart-head";
 
@@ -53,8 +52,10 @@ const PRODUCTS: Product[] = [
   },
 ];
 
-const CartList: FC = () => {
-  let [state, setState] = useState<Product[]>(PRODUCTS);
+const CartList = () => {
+  const [state, setState] = useState<Product[]>(PRODUCTS);
+
+  const total = state.reduce((acc, item) => acc + +item.price * +item.count, 0);
 
   return (
     <CartListSection>
@@ -69,7 +70,7 @@ const CartList: FC = () => {
             <tbody>
               {state.map((product) => (
                 <CartListTableSection key={product.id}>
-                  <CartBodyProduct product={product}/>
+                  <CartBodyProduct product={product} />
                   <CartListTableItem>
                     <CartListProductCounter
                       type="number"
@@ -111,19 +112,17 @@ const CartList: FC = () => {
         {state.length !== 0 && (
           <FlexColumn>
             <Total>
-            Total: 
-            <TotalPrice>{state.reduce((acc, item) => 
-             acc + +item.price*+item.count
-            ,0)} USD
-            </TotalPrice>
+              Total:
+              <TotalPrice>{`${total}`} USD</TotalPrice>
             </Total>
-            <CartListButton as="a" href="/profile">Place an order</CartListButton>
+            <CartListButton as="a" href="/profile">
+              Place an order
+            </CartListButton>
           </FlexColumn>
-        )}     
+        )}
       </Container>
     </CartListSection>
   );
 };
 
 export default CartList;
-

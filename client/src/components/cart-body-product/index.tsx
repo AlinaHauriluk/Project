@@ -20,21 +20,20 @@ interface CartBodyProps {
   };
 }
 
-const CartBodyProduct: FC<CartBodyProps> = ({ product }) => {
-  return (
-    <>
-      <CartListTableItem>
-        <Flex>
-          <CartBodyProductPhoto photo={product.photo} />
-          <CartBodyProductTitle>{product.title}</CartBodyProductTitle>
-        </Flex>
-      </CartListTableItem>
-      <CartListTableItem>
-        <CartListProductPrice>
-          {product.price} {product.current}
-        </CartListProductPrice>
-      </CartListTableItem>
-    </>
-  );
-};
+const CartBodyProduct: FC<CartBodyProps> = ({ product }) => (
+  <>
+    <CartListTableItem>
+      <Flex>
+        <CartBodyProductPhoto photo={product.photo} />
+        <CartBodyProductTitle>{product.title}</CartBodyProductTitle>
+      </Flex>
+    </CartListTableItem>
+    <CartListTableItem>
+      <CartListProductPrice>
+        {product.price} {product.current}
+      </CartListProductPrice>
+    </CartListTableItem>
+  </>
+);
+
 export default CartBodyProduct;
