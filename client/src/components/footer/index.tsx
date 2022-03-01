@@ -1,4 +1,3 @@
-import type {FC} from "react";
 import { FlexContainerSpace, FlexStartColumn } from "../../box/flex-box";
 import {
   FooterBlock,
@@ -18,7 +17,7 @@ const contacts = [
   { id: 3, title: "Email:", info: "yourmail@gmail" },
 ];
 
-const Footer:FC = () => {
+const Footer = () => {
   return (
     <FooterBlock>
       <FlexContainerSpace>

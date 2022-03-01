@@ -1,4 +1,3 @@
-import type {FC} from "react";
 import { useEffect } from "react";
 import { FlexContainer, Flex } from "../../box/flex-box";
 import { BlockSubTitle, BlockTitle } from "../../text/text";
@@ -13,7 +12,7 @@ import {
   NewExperienceText,
 } from "./new-experience";
 
-const NewExperience:FC = () => {
+const NewExperience = () => {
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);

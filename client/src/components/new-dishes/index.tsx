@@ -1,4 +1,3 @@
-import type {FC} from "react";
 import { useEffect } from "react";
 import Rating from "../rating";
 import { Container, ButtonOrder } from "../../box/absolute-box";
@@ -46,7 +45,7 @@ const newDishes = [
   },
 ];
 
-const NewDishes:FC = () => {
+const NewDishes = () => {
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);

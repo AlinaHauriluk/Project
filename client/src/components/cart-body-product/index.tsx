@@ -1,4 +1,3 @@
-import type { FC } from "react";
 import { Flex } from "../../box/flex-box";
 import {
   CartBodyProductTitle,
@@ -20,7 +19,7 @@ interface CartBodyProps {
   };
 }
 
-const CartBodyProduct: FC<CartBodyProps> = ({ product }) => (
+const CartBodyProduct: React.FC<CartBodyProps> = ({ product }) => (
   <>
     <CartListTableItem>
       <Flex>

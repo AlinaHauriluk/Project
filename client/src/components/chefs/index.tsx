@@ -1,4 +1,3 @@
-import type {FC} from "react";
 import { useEffect } from "react";
 import { ChefSection } from "./chefs";
 import { Container } from "../../box/absolute-box";
@@ -35,7 +34,7 @@ const chefData = [
   },
 ];
 
-const Chefs:FC = () => {
+const Chefs = () => {
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);

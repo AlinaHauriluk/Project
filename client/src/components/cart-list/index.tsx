@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Container } from "../../box/absolute-box";
 import {
   CartListSection,
@@ -16,6 +16,8 @@ import {
 import { FlexColumn } from "../../box/flex-box";
 import CartBodyProduct from "../cart-body-product";
 import CartHead from "../cart-head";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 type Product = {
   id: number;
@@ -57,6 +59,10 @@ const CartList = () => {
 
   const total = state.reduce((acc, item) => acc + +item.price * +item.count, 0);
 
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   return (
     <CartListSection>
       <Container>
@@ -69,7 +75,7 @@ const CartList = () => {
             </thead>
             <tbody>
               {state.map((product) => (
-                <CartListTableSection key={product.id}>
+                <CartListTableSection key={product.id} data-aos="fade-down">
                   <CartBodyProduct product={product} />
                   <CartListTableItem>
                     <CartListProductCounter
@@ -111,7 +117,7 @@ const CartList = () => {
         )}
         {state.length !== 0 && (
           <FlexColumn>
-            <Total>
+            <Total data-aos="zoom-in">
               Total:
               <TotalPrice>{`${total}`} USD</TotalPrice>
             </Total>

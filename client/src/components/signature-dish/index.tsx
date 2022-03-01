@@ -1,4 +1,3 @@
-import type {FC} from "react";
 import { useEffect } from "react";
 import { FlexContainer, FlexSpaceBetween } from "../../box/flex-box";
 import { BlockTitle, BlockSubTitle } from "../../text/text";
@@ -15,7 +14,7 @@ import {
   SignatureDishImage,
 } from "./signature-dish";
 
-const SignatureDish:FC = () => {
+const SignatureDish = () => {
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);

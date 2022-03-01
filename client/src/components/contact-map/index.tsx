@@ -1,4 +1,3 @@
-import type {FC} from "react";
 import {useEffect} from "react";
 import { ContactMapInfo, ContactMapSection } from "./contact-map";
 import { YMaps, Placemark } from "react-yandex-maps";
@@ -7,7 +6,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { coordinates } from "../../config/contacts";
 
-const ContactMap:FC = () => {
+const ContactMap = () => {
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);

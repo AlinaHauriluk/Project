@@ -1,4 +1,3 @@
-import type {FC} from "react";
 import DefaultLayout from "../../layout/defaultLayout";
 import Promo from "../../components/promo";
 import Chefs from "../../components/chefs";
@@ -11,7 +10,7 @@ const styles = {
   }
 }
 
-const About:FC = () => (
+const About = () => (
   <DefaultLayout>
     <Promo title="About Us" style ={styles.section} />
     <Chefs />
