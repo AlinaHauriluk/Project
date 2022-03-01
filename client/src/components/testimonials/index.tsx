@@ -1,4 +1,3 @@
-import type {FC} from "react";
 import { useEffect } from "react";
 import { Container } from "../../box/absolute-box";
 import AOS from "aos";
@@ -36,7 +35,7 @@ const dataTestimonials = [
   },
 ];
 
-const Testimonials:FC = () => {
+const Testimonials = () => {
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);

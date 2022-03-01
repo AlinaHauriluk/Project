@@ -1,4 +1,3 @@
-import type {FC} from "react";
 import Nav from "../nav";
 import { Container } from "../../box/absolute-box";
 import { Button } from "./header";
@@ -11,7 +10,7 @@ import {
   ButtonSecondary,
 } from "./header";
 
-const Header:FC = () => {
+const Header = () => {
   return (
     <HeaderSection>
       <Container>

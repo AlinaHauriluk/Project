@@ -1,4 +1,3 @@
-import type {FC} from "react";
 import DefaultLayout from "../../layout/defaultLayout";
 import Promo from "../../components/promo";
 import ContactInfo from "../../components/contact-info";
@@ -12,7 +11,7 @@ const styles = {
   }
 }
 
-const Contacts:FC = () => (
+const Contacts = () => (
   <DefaultLayout>
     <Promo title="Your Cart" style={styles.section}/>
     <ContactInfo />
