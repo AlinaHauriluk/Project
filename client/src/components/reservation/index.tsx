@@ -2,6 +2,7 @@ import { useForm, Controller } from "react-hook-form";
 import { ReservationSection, ReservationTitle } from "./reservation";
 import { FlexColumnContainer, FlexCenter } from "../../box/flex-box";
 import "react-datepicker/dist/react-datepicker.css";
+import { ErrorForm, SubmittedForm } from "../../box/form";
 import {
   ButtonForm,
   Form,
@@ -23,7 +24,7 @@ const Reservation = () => {
     control,
     register,
     handleSubmit,
-    formState: { errors, submitCount },
+    formState: { errors, submitCount, isSubmitSuccessful },
   } = useForm<FormValues>();
 
   const onSubmit = handleSubmit((data) => console.log(data, { submitCount }));
@@ -60,7 +61,7 @@ const Reservation = () => {
               step="1800"
               {...register("time", { required: true })}
             />
-            {errors.time && "Required field"}
+            {errors.time && <ErrorForm>Required field</ErrorForm>}
 
             <InputPerson
               type="number"
@@ -69,7 +70,14 @@ const Reservation = () => {
               min="1"
               {...register("persons", { required: true })}
             />
-            {errors.persons && alert("Required field")}
+            {errors.persons && <ErrorForm>Required field</ErrorForm>}
+            {isSubmitSuccessful && (
+              <SubmittedForm
+                onClick={(e) => (e.currentTarget.style.display = "none")}
+              >
+                We will Contact You as soon as possible
+              </SubmittedForm>
+            )}
           </FlexCenter>
           <ButtonForm>Make a Reservation</ButtonForm>
         </Form>

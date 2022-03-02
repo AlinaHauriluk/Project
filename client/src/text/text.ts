@@ -22,3 +22,9 @@ export const BlockTitle = styled.h3`
   margin-bottom: 20px;
   font-weight: 400;
 `;
+export const TitleProfile = styled.h3`
+  font-size: ${({ theme }) => theme.fontSize.large};
+  color: ${({ theme }) => theme.colors.secondary};
+  margin-bottom: 40px;
+  text-align: center;
+`

@@ -2,11 +2,11 @@ import styled, { keyframes } from "styled-components";
 import { pulse } from "react-animations";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import { FlexCenter } from "./flex-box";
 
 export const Form = styled.form`
   width: 100%;
 `;
-
 export const Calendar = styled(DatePicker)`
   background: ${({ theme }) => theme.colors.transparent};
   height: 40px;
@@ -68,3 +68,49 @@ export const ButtonForm = styled.button`
     animation: 3s ${keyframes`${pulse}`} infinite;
   }
 `;
+export const ErrorForm = styled(FlexCenter)`
+  width: 15%;
+  height: 40px;
+  font-size: ${({ theme }) => theme.fontSize.mediumMedium};
+  position: fixed;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+  font-weight: 600;
+  background-color: ${({ theme }) => theme.colors.secondary};
+  border: solid 2px ${({ theme }) => theme.colors.backgroundSectionTwo};
+`
+export const SubmittedForm = styled(FlexCenter)`
+  width: 35%;
+  height: 70px;
+  font-size: ${({ theme }) => theme.fontSize.mediumMedium};
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  transform:translate(-50%, -50%);
+  font-weight: 600;
+  background-color: ${({ theme }) => theme.colors.backgroundSectionTwo};
+  border: solid 2px ${({ theme }) => theme.colors.secondary};
+  cursor: pointer;
+`
+export const TextareaForm = styled.textarea`
+  background-color: ${({ theme }) => theme.colors.backgroundSectionTwo};
+  border: solid 2px ${({ theme }) => theme.colors.secondary};
+  outline: none;
+  cursor: pointer;
+  font-size: ${({ theme }) => theme.fontSize.mediumMedium};
+  text-align: center;
+  padding: 20px;
+  line-height: 28px;
+  resize: none;
+
+  ::placeholder {
+    color: ${({ theme }) => theme.colors.colorText};
+    text-align: center;
+    letter-spacing: 1.6px;
+    font-size: ${({ theme }) => theme.fontSize.mediumMedium};
+    padding-top: 40px;
+  }
+`
