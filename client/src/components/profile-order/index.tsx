@@ -1,4 +1,3 @@
-import type { FC } from "react";
 import { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { Form, ButtonForm, ErrorForm, SubmittedForm } from "../../box/form";
@@ -22,7 +21,7 @@ type FormValues = {
   address: string;
 };
 
-const ProfileOrder: FC = () => {
+const ProfileOrder = () => {
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);

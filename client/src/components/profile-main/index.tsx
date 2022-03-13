@@ -5,8 +5,7 @@ import ProfileOrder from '../profile-order';
 import ProfileTestimonials from '../profile-testomonials';
 import ProfileRating from '../profile-rating';
 
-const ProfileMain = () => {
-  return(
+const ProfileMain = () => (
     <ProfileSection>
       <Container>
         <ProfileTabs>
@@ -32,7 +31,6 @@ const ProfileMain = () => {
         </ProfileTabs>
       </Container>
     </ProfileSection>
-  )
-}
+)
 
 export default ProfileMain
