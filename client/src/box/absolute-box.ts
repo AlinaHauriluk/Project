@@ -32,4 +32,6 @@ export const ButtonOrder = styled.button`
     animation: 3s ${keyframes`${pulse}`} infinite;
   }
 `
-
+export const ProfileContainer = styled.div`
+  padding: 30px 0;
+`;
