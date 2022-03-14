@@ -3,6 +3,7 @@ import { Container } from '../../box/absolute-box';
 import { TabList, TabPanel } from 'react-tabs';
 import ProfileOrder from '../profile-order';
 import ProfileTestimonials from '../profile-testomonials';
+import ProfileFollowers from '../profile-followers';
 import ProfileRating from '../profile-rating';
 
 const ProfileMain = () => (
@@ -20,7 +21,7 @@ const ProfileMain = () => (
             <ProfileOrder />
           </TabPanel>
           <TabPanel>
-            <h3>Your friends</h3>
+            <ProfileFollowers />
           </TabPanel>
           <TabPanel>
             <ProfileRating />
