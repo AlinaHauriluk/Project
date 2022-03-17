@@ -1,0 +1,16 @@
+.rcw-conversation-container {
+  position: absolute;
+  right: 120%;
+  bottom: -55%;
+}
+
+.rcw-conversation-container > .rcw-header {
+  background-color: #b49383;
+  height: 70px;
+  padding-top: 0;
+}
+
+.rcw-message > .rcw-response {
+  font-weight: 600;
+  color: black;
+}
