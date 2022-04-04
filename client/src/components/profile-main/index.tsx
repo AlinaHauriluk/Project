@@ -1,6 +1,5 @@
-import { ProfileSection, ProfileTabs, ProfileTab } from './profile-main'
-import { Container } from '../../box/absolute-box';
-import { TabList, TabPanel } from 'react-tabs';
+import { ProfileSection, ProfileTabs, ProfileTab, ProfileContainer, ProfileTabList } from './profile-main'
+import { TabPanel } from 'react-tabs';
 import ProfileOrder from '../profile-order';
 import ProfileTestimonials from '../profile-testomonials';
 import ProfileFollowers from '../profile-followers';
@@ -8,14 +7,14 @@ import ProfileRating from '../profile-rating';
 
 const ProfileMain = () => (
     <ProfileSection>
-      <Container>
+      <ProfileContainer>
         <ProfileTabs>
-          <TabList>
+          <ProfileTabList>
             <ProfileTab>Delivery your Order</ProfileTab>
             <ProfileTab>Your Friends</ProfileTab>
             <ProfileTab>Dishes Rating</ProfileTab>
             <ProfileTab>Your Tetimonials</ProfileTab>
-          </TabList>
+          </ProfileTabList>
 
           <TabPanel>
             <ProfileOrder />
@@ -30,7 +29,7 @@ const ProfileMain = () => (
             <ProfileTestimonials />
           </TabPanel>
         </ProfileTabs>
-      </Container>
+      </ProfileContainer>
     </ProfileSection>
 )
 

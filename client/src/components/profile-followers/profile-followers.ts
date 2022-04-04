@@ -11,11 +11,28 @@ export const ProfileFollowersContainer = styled(ProfileContainer)`
 `
 export const ProfileFollowersFlex = styled(FlexContainer)`
   flex-wrap: wrap;
+  width: 60%;
+  @media(max-width: 1024px){
+    width: 80%;
+  }
+
+  @media(max-width: 376px){
+    width: 70%;
+  }
+
+  @media(max-width: 321px){
+    width: 80%;
+  }
 `
 export const ProfileFollowersWrapper = styled.div`
-  width: 80px;
+  width: 50px;
   margin-bottom: 30px;
-  margin-right: 40px;
+  margin-right: 20px;
+
+  @media(max-width: 376px){
+    width: 40px;
+    margin-right: 10px;
+  }
 `
 export const ProfileFollowersModale = styled(BlockDescription)`
   position: fixed;

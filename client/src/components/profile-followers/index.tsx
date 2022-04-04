@@ -6,7 +6,6 @@ import {
 } from "./profile-followers";
 import { TitleProfile } from "../../text/text";
 import Avatar from "react-avatar";
-import { FlexContainer } from "../../box/flex-box";
 import Modale from "../modale";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -119,7 +118,7 @@ const ProfileFollowers = () => {
         {state.map((friend) => (
           <ProfileFollowersWrapper key={friend.id}>
             <Avatar
-              style={{ cursor: "pointer" }}
+              style={{border: '2px solid black' }}
               name={friend.name}
               size="80"
               round={true}

@@ -1,33 +1,34 @@
 import Nav from "../nav";
-import { Container } from "../../box/absolute-box";
-import { Button } from "./header";
 import {
+  ButtonSecondary,
   HeaderSection,
-  HeaderFlex,
-  FlipInX,
   LogoTitle,
   LogoSubtitle,
-  ButtonSecondary,
+  Button,
+  FlipInX,
+  ButtonWrapper,
+  HeaderContainer
 } from "./header";
+import {FlexSpaceBetween} from '../../box/flex-box'
 
 const Header = () => {
   return (
     <HeaderSection>
-      <Container>
-        <HeaderFlex>
+      <HeaderContainer>
+        <FlexSpaceBetween>
           <FlipInX>
             <LogoTitle>The Venue</LogoTitle>
-            <LogoSubtitle>restaurant</LogoSubtitle>
+            <LogoSubtitle>Restaurant</LogoSubtitle>
           </FlipInX>
 
           <Nav />
 
-          <div>
+          <ButtonWrapper>
             <Button>Log In</Button>
             <ButtonSecondary>Sign Up</ButtonSecondary>
-          </div>
-        </HeaderFlex>
-      </Container>
+          </ButtonWrapper>
+        </FlexSpaceBetween>
+      </HeaderContainer>
     </HeaderSection>
   );
 };

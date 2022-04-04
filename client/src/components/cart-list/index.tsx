@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { Container } from "../../box/absolute-box";
 import {
   CartListSection,
   CartListTable,
@@ -12,6 +11,7 @@ import {
   CartListButton,
   Total,
   TotalPrice,
+  CartListContainer
 } from "./cart-list";
 import { FlexColumn } from "../../box/flex-box";
 import CartBodyProduct from "../cart-body-product";
@@ -65,7 +65,7 @@ const CartList = () => {
 
   return (
     <CartListSection>
-      <Container>
+      <CartListContainer>
         {state.length !== 0 ? (
           <CartListTable>
             <thead>
@@ -126,7 +126,7 @@ const CartList = () => {
             </CartListButton>
           </FlexColumn>
         )}
-      </Container>
+      </CartListContainer>
     </CartListSection>
   );
 };

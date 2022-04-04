@@ -1,6 +1,6 @@
 import { Container } from "../../box/absolute-box";
 import { BlockSubTitle, BlockTitle } from "../../text/text";
-import { FlexSpaceBetween, FlexStartColumn } from "../../box/flex-box";
+import { FlexStartColumn } from "../../box/flex-box";
 import {
   ContactInfoSection,
   ContactInfoWrapperLeft,
@@ -10,6 +10,8 @@ import {
   ContactInfoContainer,
   ContactInfoTitle,
   ContactInfoDescription,
+  ContactInfoWrapper,
+  LogoContainer,
 } from "./contact-info";
 
 const contacts = [
@@ -23,7 +25,7 @@ const ContactInfo = () => {
     <ContactInfoSection>
       <Container>
         <BlockSubTitle>Contact Info</BlockSubTitle>
-        <FlexSpaceBetween>
+        <ContactInfoWrapper>
           <ContactInfoWrapperLeft>
             <ContactInfoText>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
@@ -32,8 +34,10 @@ const ContactInfo = () => {
               Ut non justo eleifend, facilisis nibh ut, interdum odio.
               Suspendisse potenti.
             </ContactInfoText>
-            <BlockTitle>The Venue</BlockTitle>
-            <ContactInfoSubtitleLogo>restaurant</ContactInfoSubtitleLogo>
+            <LogoContainer>
+              <BlockTitle>The Venue</BlockTitle>
+              <ContactInfoSubtitleLogo>restaurant</ContactInfoSubtitleLogo>
+            </LogoContainer>
           </ContactInfoWrapperLeft>
           <ContactInfoWrapperRight>
             <FlexStartColumn>
@@ -47,7 +51,7 @@ const ContactInfo = () => {
               ))}
             </FlexStartColumn>
           </ContactInfoWrapperRight>
-        </FlexSpaceBetween>
+        </ContactInfoWrapper>
       </Container>
     </ContactInfoSection>
   );

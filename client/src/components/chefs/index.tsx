@@ -1,9 +1,8 @@
 import { useEffect } from "react";
-import { ChefSection } from "./chefs";
+import { ChefSection, ChefWrapper } from "./chefs";
 import { Container } from "../../box/absolute-box";
 import SomethingNew from "../something-new";
 import ChefsInfo from '../chefs-info'
-import { FlexCenter } from "../../box/flex-box";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -57,9 +56,9 @@ const Chefs = () => {
               luctus diam eu neque rutrum, vitae aliquet dolor venenatis. Nulla
               consequat fringilla."
         />
-        <FlexCenter>
+        <ChefWrapper>
           <ChefsInfo chefs={chefData} />
-        </FlexCenter>
+        </ChefWrapper>
       </Container>
     </ChefSection>
   );

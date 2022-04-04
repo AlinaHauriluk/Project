@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { FlexCenter } from "../../box/flex-box";
 
 export const ReservationSection = styled.div`
   height: 400px;
@@ -13,4 +14,14 @@ export const ReservationTitle = styled.h3`
   font-weight: 400;
   line-height: 0.75;
   margin-bottom: 60px;
+
+  @media(max-width: 426px){
+    font-size: ${({ theme }) => theme.fontSize.mediumLarge};
+  }
 `;
+
+export const ReservationWrapper = styled(FlexCenter)`
+  @media(max-width: 426px){
+    flex-direction: column;
+  }
+`

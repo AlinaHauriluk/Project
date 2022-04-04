@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { TitleProfile } from "../../text/text";
-import { FlexSpaceBetween } from "../../box/flex-box";
-import { ProfileRatingDish, ProfileRatingTitle } from "./profile-rating";
+import { ProfileRatingDish, ProfileRatingTitle, ProfileRatingContainer } from "./profile-rating";
 import { ProfileContainer, Container } from "../../box/absolute-box";
 import Rating from "../rating";
 import AOS from "aos";
@@ -34,7 +33,7 @@ const ProfileRating = () => {
     <ProfileContainer>
       <TitleProfile>Rate our Dishes</TitleProfile>
       <Container>
-        <FlexSpaceBetween>
+        <ProfileRatingContainer>
           {dishesRating.map((dish) => (
             <div key={dish.id} data-aos="zoom-in">
               <ProfileRatingDish photo={dish.photo}>
@@ -43,7 +42,7 @@ const ProfileRating = () => {
               <Rating rating={dish.id} />
             </div>
           ))}
-        </FlexSpaceBetween>
+        </ProfileRatingContainer>
       </Container>
     </ProfileContainer>
   );

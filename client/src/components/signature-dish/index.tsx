@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import { FlexContainer, FlexSpaceBetween } from "../../box/flex-box";
-import { BlockTitle, BlockSubTitle } from "../../text/text";
+import { FlexSpaceBetween } from "../../box/flex-box";
+import { BlockSubTitle } from "../../text/text";
 import { ButtonOrder } from "../../box/absolute-box";
 import Rating from "../rating";
 import AOS from "aos";
@@ -12,6 +12,8 @@ import {
   SignatureDishPrice,
   SignatureDishText,
   SignatureDishImage,
+  SignatureDishContainer,
+  SignatureDishTitle
 } from "./signature-dish";
 
 const SignatureDish = () => {
@@ -21,10 +23,10 @@ const SignatureDish = () => {
 
   return (
     <SectionSignatureDish>
-      <FlexContainer>
+      <SignatureDishContainer>
         <SignatureDishDescription data-aos="fade-right">
           <BlockSubTitle>Something new</BlockSubTitle>
-          <BlockTitle>Our Signature Dish</BlockTitle>
+          <SignatureDishTitle>Our Signature Dish</SignatureDishTitle>
           <Rating rating={2} />
           <FlexSpaceBetween>
             <SignatureDishName>
@@ -39,7 +41,7 @@ const SignatureDish = () => {
           <ButtonOrder>Order now</ButtonOrder>
         </SignatureDishDescription>
         <SignatureDishImage data-aos="fade-down" />
-      </FlexContainer>
+      </SignatureDishContainer>
     </SectionSignatureDish>
   );
 };

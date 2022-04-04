@@ -1,4 +1,3 @@
-import { FlexContainerSpace, FlexStartColumn } from "../../box/flex-box";
 import {
   FooterBlock,
   FooterLogo,
@@ -8,6 +7,8 @@ import {
   FooterList,
   FooterContactTitle,
   FooterContactInfo,
+  FooterContainer,
+  FooterStartColumn
 } from "./footer";
 
 
@@ -20,7 +21,7 @@ const contacts = [
 const Footer = () => {
   return (
     <FooterBlock>
-      <FlexContainerSpace>
+      <FooterContainer>
         <FooterLogo>
           <FooterLogoTitle>The Venue</FooterLogoTitle>
           <FooterLogoSubTitle>restaurant</FooterLogoSubTitle>
@@ -30,7 +31,7 @@ const Footer = () => {
           malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut
           ac ligula sapien.
         </FooterDescription>
-        <FlexStartColumn>
+        <FooterStartColumn>
           {contacts.map((contact) => (
             <FooterList key={contact.id}>
               <FooterContactTitle>{contact.title}</FooterContactTitle>
@@ -39,8 +40,8 @@ const Footer = () => {
               </FooterContactInfo>
             </FooterList>
           ))}
-        </FlexStartColumn>
-      </FlexContainerSpace>
+        </FooterStartColumn>
+      </FooterContainer>
     </FooterBlock>
   );
 };
