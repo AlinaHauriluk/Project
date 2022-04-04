@@ -1,7 +1,7 @@
-import { Flex } from "../../box/flex-box";
 import {
   CartBodyProductTitle,
   CartBodyProductPhoto,
+  CartBodyProductWrapper
 } from "./cart-body-product";
 import {
   CartListTableItem,
@@ -22,10 +22,10 @@ interface CartBodyProps {
 const CartBodyProduct: React.FC<CartBodyProps> = ({ product }) => (
   <>
     <CartListTableItem>
-      <Flex>
+      <CartBodyProductWrapper>
         <CartBodyProductPhoto photo={product.photo} />
         <CartBodyProductTitle>{product.title}</CartBodyProductTitle>
-      </Flex>
+      </CartBodyProductWrapper>
     </CartListTableItem>
     <CartListTableItem>
       <CartListProductPrice>

@@ -6,10 +6,10 @@ import {
   ProfileOrderInput,
   ProfileOrderAdress,
   ProfileOrderWrapper,
+  ProfileWrapper
 } from "./profile-order";
 import { ProfileContainer } from "../../box/absolute-box";
 import { TitleProfile } from "../../text/text";
-import { FlexSpaceBetween } from "../../box/flex-box";
 import { Container } from "../../box/absolute-box";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -40,7 +40,7 @@ const ProfileOrder = () => {
       <ProfileOrderContainer data-aos="flip-down">
         <Container>
           <Form onSubmit={onSubmit}>
-            <FlexSpaceBetween>
+            <ProfileWrapper>
               <ProfileOrderInput
                 {...register("name", { required: true })}
                 type="text"
@@ -65,7 +65,7 @@ const ProfileOrder = () => {
                 {...register("email", { required: true })}
               />
               {errors.email && <ErrorForm>Required field</ErrorForm>}
-            </FlexSpaceBetween>
+            </ProfileWrapper>
             <ProfileOrderWrapper>
               <ProfileOrderAdress
                 type="text"

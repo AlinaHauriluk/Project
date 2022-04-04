@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { FlexCenter } from "../../box/flex-box";
+import { FlexCenter, FlexSpaceBetween } from "../../box/flex-box";
 
 export const ProfileRatingDish = styled(FlexCenter)<{photo: string}>`
   width: 250px;
@@ -10,6 +10,21 @@ export const ProfileRatingDish = styled(FlexCenter)<{photo: string}>`
   margin-bottom: 10px;
   border: 2px solid ${({ theme }) => theme.colors.secondary};
   flex-wrap: wrap;
+
+  @media(max-width: 1024px){
+    width: 300px;
+    height: 200px;
+  }
+
+  @media(max-width: 321px){
+    width: 280px;
+    height: 200px;
+  }
+`
+export const ProfileRatingContainer = styled(FlexSpaceBetween)`
+  @media(max-width: 1024px){
+    flex-direction: column;
+  }
 `
 export const ProfileRatingTitle = styled.h4`
   backdrop-filter: blur(5px);

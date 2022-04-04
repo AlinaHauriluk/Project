@@ -61,7 +61,7 @@ const NewDishes = () => {
               <NewDishesName>
                 {dish.title}
                 <NewDishesPrice>
-                  {dish.price}
+                  {dish.price} 
                   {dish.current}
                 </NewDishesPrice>
               </NewDishesName>

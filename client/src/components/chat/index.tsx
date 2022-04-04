@@ -21,6 +21,7 @@ const Chat = () => {
         subtitle="Welcome"
         showCloseButton={true}
         emojis={true}
+        resizable={true}
         launcher={(handleToggle: () => void) => getCustomLauncher(handleToggle)}
       />
     </>

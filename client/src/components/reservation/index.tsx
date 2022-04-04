@@ -1,6 +1,10 @@
 import { useForm, Controller } from "react-hook-form";
-import { ReservationSection, ReservationTitle } from "./reservation";
-import { FlexColumnContainer, FlexCenter } from "../../box/flex-box";
+import {
+  ReservationSection,
+  ReservationTitle,
+  ReservationWrapper,
+} from "./reservation";
+import { FlexColumnContainer } from "../../box/flex-box";
 import "react-datepicker/dist/react-datepicker.css";
 import { ErrorForm, SubmittedForm } from "../../box/form";
 import {
@@ -35,7 +39,7 @@ const Reservation = () => {
         <BlockSubTitle>5 Stars</BlockSubTitle>
         <ReservationTitle>Make a Reservation</ReservationTitle>
         <Form onSubmit={onSubmit}>
-          <FlexCenter>
+          <ReservationWrapper>
             <Controller
               name="date"
               defaultValue={new Date()}
@@ -78,7 +82,7 @@ const Reservation = () => {
                 We will Contact You as soon as possible
               </SubmittedForm>
             )}
-          </FlexCenter>
+          </ReservationWrapper>
           <ButtonForm>Make a Reservation</ButtonForm>
         </Form>
       </FlexColumnContainer>

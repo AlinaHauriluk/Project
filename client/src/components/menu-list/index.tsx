@@ -1,8 +1,6 @@
 import type {FC} from "react";
 import { useEffect } from "react";
-import { Container } from "../../box/absolute-box";
 import { BlockSubTitle } from "../../text/text";
-import { FlexJustifyCenter } from "../../box/flex-box";
 import Rating from "../rating";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -19,6 +17,8 @@ import {
   DishPrice,
   DishDescription,
   DishOrder,
+  MenuWrapperContainer,
+  MenuFlex
 } from "./menu-list";
 
 interface MenuProps {
@@ -75,7 +75,7 @@ const MenuList:FC<MenuProps> = ({ title, subtitle }) => {
 
   return (
     <MenuContainer>
-      <Container>
+      <MenuWrapperContainer>
         {title && subtitle && (
           <MenuWrapper data-aos="flip-down">
             <MenuWrapperTitle>
@@ -86,7 +86,7 @@ const MenuList:FC<MenuProps> = ({ title, subtitle }) => {
           </MenuWrapper>
         )}
 
-        <FlexJustifyCenter>
+        <MenuFlex>
           {data.map((item) => (
             <MenuPart key={item.id} data-aos="fade-down">
               <MenuPartTitle>{item.title}</MenuPartTitle>
@@ -104,8 +104,8 @@ const MenuList:FC<MenuProps> = ({ title, subtitle }) => {
               ))}
             </MenuPart>
           ))}
-        </FlexJustifyCenter>
-      </Container>
+        </MenuFlex>
+      </MenuWrapperContainer>
     </MenuContainer>
   );
 };
